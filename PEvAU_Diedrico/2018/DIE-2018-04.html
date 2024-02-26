@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DIE-2018-04</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="generator" content="FreeCAD 0.21.2">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background: #ffffff; /* Old browsers */
+                background: -moz-linear-gradient(top, #e3e9fc 0%, #ffffff 70%, #e2dab3 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #e3e9fc 0%,#ffffff 70%,#e2dab3 100%); /* Chrome10-25, Safari5.1-6 */
+                background: linear-gradient(to bottom, #e3e9fc 0%,#ffffff 70%,#e2dab3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                width: 100vw;
+                height: 100vh;
+            }
+            canvas { display: block; }
+            #mainCanvas {
+                width: 100%;
+                height: 100%;
+            }
+            #arrowCanvas  {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 150px;
+                height: 150px;
+                z-index: 100;
+            }
+            select { width: 170px; }
+        </style>
+    </head>
+    <body>
+        <canvas id="mainCanvas"></canvas>
+        <canvas id="arrowCanvas"></canvas>
+        <script type="module">
+            // Direct from mrdoob: https://www.jsdelivr.com/package/npm/three
+            import * as THREE from            'https://cdn.jsdelivr.net/npm/three@0.125.0/build/three.module.js';
+            import { OrbitControls } from     'https://cdn.jsdelivr.net/npm/three@0.125.0/examples/jsm/controls/OrbitControls.js';
+            import { GUI } from               'https://cdn.jsdelivr.net/npm/three@0.125.0/examples/jsm/libs/dat.gui.module.js';
+            import { Line2 } from             'https://cdn.jsdelivr.net/npm/three@0.125.0/examples/jsm/lines/Line2.js';
+            import { LineMaterial } from      'https://cdn.jsdelivr.net/npm/three@0.125.0/examples/jsm/lines/LineMaterial.js';
+            import { LineGeometry } from      'https://cdn.jsdelivr.net/npm/three@0.125.0/examples/jsm/lines/LineGeometry.js';
+            import { EdgeSplitModifier } from 'https://cdn.jsdelivr.net/npm/three@0.125.0/examples/jsm/modifiers/EdgeSplitModifier.js';
+
+            const data = {"camera":{"type":"Orthographic","focalDistance":181.2136993408203,"position_x":207.25689697265625,"position_y":-146.5255584716797,"position_z":179.1798858642578},"file":{},"objects":[{"name":"Pir\u00e1mide","color":"#69c2a6","opacity":0.7,"verts":"2 g f h d e f i j c a b c k h l m j]i^i_i,i.i{i|i}i~i`iajbjcjdjejfjgjhjijjjkjljmjnjojpjqjrjsjtjujvjwjxjyjzjAjBjCjDjEjFjGjHjIjJjKjLjMjNjOjPjQjRjSjTjUjVjWjXjYjZj1j2j3j4j5j6j7j8j9j0j!j#jyczc$jTgUg%j&j(j)j*j+j-j:j;j/j=j>j?j@j[j]j^j_j,j.j{j|j}j~j`jakbkckdkekfkgkhkikjkkklkmknkokpkqkrksktkukvkwkxkykzkAkBkCkDkEkFkGkHkIkJkKkLkMkNkOkPkQkRkSkTkUk%i&i(irksktklkmknkxkykzkDkEkFkJkKkLkPkQkRk k h lfkgkhk5i6i7i g f hVk#iWk-j:j;j%j&j(j?j@j[j,j.j{j`jakbk#jyczc6j7j8jZj1j2jTjUjVjNjOjPjHjIjJjBjCjDjvjwjxj8i9i0ipjqjrjjjkjljdjejfj}i~i`i^i_i,i d e fXkYkZk1k2k3k4k5k6k7k8k9k0k!k#k$k%k&k(k)k*k+k-k:k;k/k=k>k?k@k[k]k^k_k,k.k{k|k}k~k`kalblcldlelflglhliljlklllmlnlolplqlrlsltl*i+iul:i;ivlwlxlylzlAlBlClDlElFlGlHlIlJlKlLlMlNlOlPlQlRlSlTlUlVlWlXlYlZl1l2l3l4l5l6l7l8l9l0l!l#l$l%l&l(l)l*l+l-l:l;l/l=l>l?l@l[l]l^l_l,l.l{l|l}l~l`l/i=i>iambmcmdmemfmgmhmimjmkmlmmmnmompmqmrmsmtmumvmwmxmymzmAmBmCmDmEmFmGmHmImJmKmLmMmNmOmPmQmRmSmTmUmVmWmXmYmZm1m2m3m4m5m6m7m8m9m0m!m#m$m%m&m(m)m*m+m-m:m;m/m=m>m?m@m[m]m^m_m,m.m{m|m}m@i[i~m`manbncndnenfngnhninjnknlnmnnnonpnqnrnsntnunvnwnxnynznAnBnCnDnEnFnGnHnInJnKnLnMnNnOnPnQnRnSnTnUnVnWnXnYnZn1n2n3n4n5n6n7n8n9n0n!n#n$n%n&n(n)n*n+n-n:n;n/n=n>n?n@n[n]n^n_n,n.n{n|n}n~n`naobocodoeofogohoiojokolomonooopoqorosotouovowoxoyozoAoBoCoDoEoFoGoHoIoJoKoLoMoNoikjkkk i j cckdkekokpkqkukvkwkAkBkCkGkHkIkMkNkOkSkTkUk m j]i|j}j~j]j^j_j/j=j>j)j*j+j$jTgUg9j0j!j3j4j5jWjXjYjQjRjSjKjLjMjEjFjGjyjzjAjsjtjujmjnjojgjhjijajbjcj.i{i|i a b c","facets":"2 a b c c b d e a f f a c b g d d g h h i j g i h j k l i k j l m n k m l n o p m o n p q r o q p r s t q s r t u v s u t v w x u w v x y z w y x z A B y A z A C B B C D C E D D E F F G H E G F H I J G I H J K L I K J L M N K M L N O P M O N P Q R O Q P R S T Q S R T U V S U T V W X U W V X Y Z W Y X Z 1 2 Y 1 Z 2 3 4 1 3 2 4 e f 3 e 4 5 6 7 5 8 6 5 9 8 5 0 9 5 ! 0 5 # ! $ 5 7 % & 5 ( ) * ( + ) ( - + ( : - ( $ : ( 5 $ ; ( * / ( ; = ( / > ( = ? ( > @ ( ? [ ( @ ] ^ ( ] ( [ _ ^ ] , ^ _ . ^ , { ^ . | ^ { } ^ | } & ^ ^ & % & # 5 % ~ ^ ` ~ %ab ~bbbb ~ ` ~cb ^abcb ~dbebbbcbfb ^abfbcbebgbbbbbgbababgbhbibgbebibjbkbkblbibgblbhbiblbgbmbnbobobpbmbkbpbqbjbpbkbmbpbjbnbrbobsbrbnbtbubqbkbublbqbubkbqbvbtbobvbpbpbvbqb %wb ` `wbbbibxbjbebxbibdbxbebxbybjbdbybxbjbzbmbnbzbsbmbzbnbybzbjb ^AbtbhbAbabfbAb ^abAbfblbAbhbtbAbububAblbtbBbsbvbBbtbsbBbrbrbBbobobBbvbsbCb % %CbwbbbCbdbwbCbbbdbCbybzbCbsbybCbzb 5DbEbEbDbFb 5Gb %EbGb 5HbGbFbFbGbEbGbIb %HbIbGbJbKbFbJbLbKbMbLbNbKbLbMbFbObHbKbObFbMbObKbPbQbRbNbQbPbLbQbNbObSbHbNbTbMbPbUbNbNbUbTbVbUbWbTbUbVbRbXbPbPbXbUbUbXbWbWbYbVbYbZbsbWbZbYbRb1b 5Jb1bLb 51bDbFb1bJbQb1bRbLb1bQbDb1bFbIb2b %Hb2bIbMb3bObOb3bSbTb3bMb3b4bSbTb4b3bsb5bYbVb5bTbYb5bVbTb5b4bsb6bRbRb6bXbXb6bWbZb6bsbWb6bZb %7bsb4b7bSb2b7b %Sb7bHbHb7b2bsb7b5b5b7b4b (8b9b9b8b0b (!b 59b!b (#b!b0b0b!b9b!b$b 5#b$b!b%b&b0b%b(b&b)b(b*b&b(b)b0b+b#b&b+b0b)b+b&b-b:b;b*b:b-b(b:b*b+b/b#b*b=b)b-b>b*b*b>b=b?b>b@b=b>b?b;b[b-b-b[b>b>b[b@b@b]b?b]b^bRb@b^b]b;b_b (%b_b(b (_b8b0b_b%b:b_b;b8b_b0b(b_b:b$b,b 5#b,b$b)b.b+b+b.b/b=b.b)b.b{b/b=b{b.bRb|b]b?b|b=b]b|b?b=b|b{bRb}b;b;b}b[b[b}b@b^b}bRb@b}b^b 5~bRb{b~b/b,b~b 5/b~b#b#b~b,bRb~b|b|b~b{b ^`b (ac`b ^bc`bcccc`bac`bdc (bcdc`bccecbcfcecccdcgc (bcgcdcechcbcbchcicjchcecjckclclcmcjchcmcicjcmchcncocpcpcqcnclcqcrckcqclcncqckcocscpctbscoc;btcrclctcmcrctclcrcuc;bpcucqcqcucrc ^vcacacvcccjcwckcecwcjcfcwcecwcxckcfcxcwckcycncocyctbncycocxcyckc (zc;biczcbcgczc (bczcgcmczcic;bzctctczcmc;bActbucAc;btbAcscscAcpcpcAcuctbBc ^ ^BcvcccBcfcycBctbvcBcccfcBcxcxcBcycsbRbtbRb;btbCcDcEcFcDcCcGcDcFcHcDcGcIcDcHcJcDcIcKcDcJcLcDcKcDcMcEcDcNcMcDcOcNcDcPcOcDcQcPcDcRcQcDcScRcDcTcScDcUcTcDcVcUcDcWcVcDcXcWcDcYcXcDcZcYcDc1cZcDc2c1cDc3c2cDc4c3c","wires":["1abcdefgfhijcabc","1ijcgffkhlmjnijc","2 m j n k f l o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1 2 3 4 5 6 7 8 9 0 ! # $ % & ( ) * + - : ; / = > ? @ [ ] ^ _ , . { | } ~ `abbbcbdbebfbgbhbibjbkblbmbnbobpbqbrbsbtbubvbwbxbybzbAbBbCbDbEbFbGbHbIbJbKbLbMbNbObPbQbRbSbTbUbVbWbXbYbZb1b2b3b4b5b6b7b8b9b0b!b#b$b%b&b(b)b*b+b-b:b;b/b=b>b?b@b[b]b^b_b,b.b{b|b}b~b`bacbcccdcecfcgchcicjckclcmcncocpcqcrcsctcucvcwcxcyczcAcBcCcDcEcFcGcHcIcJcKcLcMcNcOcPcQcRcScTcUcVcWcXcYcZc1c2c3c4c5c6c7c8c9c0c!c#c$c%c&c(c)c*c+c-c:c;c/c=c>c?c@c[c]c^c_c,c.c{c|c}c~c`cadbdcdddedfdgdhdidjdkdldmdndodpdqdrdsdtdudvdwdxdydzdAdBdCdDdEdFdGdHdIdJdKdLdMdNdOdPdQdRdSdTdUdVdWdXdYdZd1d2d3d4d5d6d7d8d9d0d!d#d$d%d&d(d)d*d+d-d:d;d/d=d>d?d@d[d]d^d_d,d.d{d|d}d~d`daebecedeeefegeheiejekelemeneoepeqereseteuevewexeyezeAeBeCeDeEeFeGeHeIe d e f a b cJeKeLeMeNeOePeQeReSeTeUeVeWeXeYeZe1e2e3e4e5e6e7e8e9e0e!e#e$e%e&e(e)e*e+e-e:e;e/e=e>e?e@e[e]e^e_e,e.e{e|e}e~e`eafbfcfdfefffgfhfifjfkflfmfnfofpfqfrfsftfufvfwfxfyfzfAfBfCfDfEfFfGfHfIfJfKfLfMfNfOfPfQfRfSfTfUfVfWfXfYfZf1f2f3f4f5f6f7f8f9f0f!f#f$f%f&f(f)f*f+f-f:f;f/f=f>f?f@f[f]f^f_f,f.f{f|f}f~f`fagbgcgdgegfggghgigjgkglgmgngogpgqgrgsgtgugvgwgxgygzgAgBgCgDgEgFgGgHgIgJgKgLgMgNgOgPgQgRgSgTgUgVgWgXgYgZg1g2g3g4g5g6g7g8g9g0g!g#g$g%g&g(g)g*g+g-g:g;g/g=g>g?g@g[g]g^g_g,g.g{g|g}g~g`gahbhchdhehfhghhhihjhkhlhmhnhohphqhrhshthuhvhwhxhyhzhAhBhChDhEhFhGhHhIhJhKhLhMhNhOhPhQhRhShThUhVhWhXhYhZh1h2h3h4h5h6h7h8h9h0h!h#h$h%h&h(h)h*h+h-h:h;h/h=h>h?h@h[h]h^h_h,h.h{h|h}h~h`haibicidieifigihiiijikiliminioipiqirisitiuiviwixiyiziAiBiCiDiEiFiGiHiIiJiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi1i2i3i4i m j n","2 g f h k h l o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1 2 3 4 5 6 7 8 9 0 ! # $ % & ( ) * + - : ; / = > ? @ [ ] ^ _ , . { | } ~ `abbbcbdbebfbgbhbibjbkblbmbnbobpbqbrbsbtbubvbwbxbybzbAbBbCbDbEbFbGbHbIbJbKbLbMbNbObPbQbRbSbTbUbVbWbXbYbZb1b2b3b4b5b6b7b8b9b0b!b#b$b%b&b(b)b*b+b-b:b;b/b=b>b?b@b[b]b^b_b,b.b{b|b}b~b`bacbcccdcecfcgchcicjckclcmcncocpcqcrcsctcucvcwcxcyczcAcBcCcDcEcFcGcHcIcJcKcLcMcNcOcPcQcRcScTcUcVcWcXcYcZc1c2c3c4c5c6c7c8c9c0c!c#c$c%c&c(c)c*c+c-c:c;c/c=c>c?c@c[c]c^c_c,c.c{c|c}c~c`cadbdcdddedfdgdhdidjdkdldmdndodpdqdrdsdtdudvdwdxdydzdAdBdCdDdEdFdGdHdIdJdKdLdMdNdOdPdQdRdSdTdUdVdWdXdYdZd1d2d3d4d5d6d7d8d9d0d!d#d$d%d&d(d)d*d+d-d:d;d/d=d>d?d@d[d]d^d_d,d.d{d|d}d~d`daebecedeeefegeheiejekelemeneoepeqereseteuevewexeyezeAeBeCeDeEeFeGeHeIe d e f g h h","25i6i7i8i9i0i!i#i$i%i&i(i5i6i7i","25i6i7i)i*i+i-i:i;i8i9i0i5i6i7i","2%i&i(i/i=i>i)i*i+i5i6i7i%i&i(i","2!i#i$i?i@i[i/i=i>i%i&i(i!i#i$i","28i9i0i-i:i;i?i@i[i!i#i$i8i9i0i","2/i=i>i?i@i[i-i:i;i)i*i+i/i=i>i","2 i j c a b cJeKeLeMeNeOePeQeReSeTeUeVeWeXeYeZe1e2e3e4e5e6e7e8e9e0e!e#e$e%e&e(e)e*e+e-e:e;e/e=e>e?e@e[e]e^e_e,e.e{e|e}e~e`eafbfcfdfefffgfhfifjfkflfmfnfofpfqfrfsftfufvfwfxfyfzfAfBfCfDfEfFfGfHfIfJfKfLfMfNfOfPfQfRfSfTfUfVfWfXfYfZf1f2f3f4f5f6f7f8f9f0f!f#f$f%f&f(f)f*f+f-f:f;f/f=f>f?f@f[f]f^f_f,f.f{f|f}f~f`fagbgcgdgegfggghgigjgkglgmgngogpgqgrgsgtgugvgwgxgygzgAgBgCgDgEgFgGgHgIgJgKgLgMgNgOgPgQgRgSgTgUgVgWgXgYgZg1g2g3g4g5g6g7g8g9g0g!g#g$g%g&g(g)g*g+g-g:g;g/g=g>g?g@g[g]g^g_g,g.g{g|g}g~g`gahbhchdhehfhghhhihjhkhlhmhnhohphqhrhshthuhvhwhxhyhzhAhBhChDhEhFhGhHhIhJhKhLhMhNhOhPhQhRhShThUhVhWhXhYhZh1h2h3h4h5h6h7h8h9h0h!h#h$h%h&h(h)h*h+h-h:h;h/h=h>h?h@h[h]h^h_h,h.h{h|h}h~h`haibicidieifigihiiijikiliminioipiqirisitiuiviwixiyiziAiBiCiDiEiFiGiHiIiJiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi1i2i3i4i m j n i j c"],"faceColors":[],"facesToFacets":["1ab","1cd","1efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234","1567890!#$%&()*+-:;/=>?@[]^_,.{|}","2 ~ `abbbcbdbebfbgbhbibjbkblbmbnbobpbqbrbsbtbubvbwbxbybzbAbBbCbDbEbFbGbHbIbJbKbLbMbNbObPbQbRbSbTbUbVbWbXbYbZb1b2b3b4b5b6b","27b8b9b0b!b#b$b%b&b(b)b*b+b-b:b;b/b=b>b?b@b[b]b^b_b,b.b{b|b}b~b`bacbcccdcecfcgchcicjckclcmcncocpcqcrcsctcucvcwcxcyczcAcBc","2CcDcEcFcGcHcIcJcKcLcMcNcOcPcQcRcScTcUcVcWcXcYcZc1c2c3c4c5c6c7c8c9c0c!c#c$c%c&c(c)c*c+c-c:c;c/c=c>c?c@c[c]c^c_c,c.c{c|c}c","2~c`cadbdcdddedfdgdhdidjdkdldmdndodpdqdrdsdtdudvdwdxdydzdAdBdCdDdEdFdGdHdIdJdKdLdMdNdOdPdQdRdSdTdUdVdWdXdYdZd1d2d3d4d5d6d","27d8d","29d0d!d#d$d%d&d(d)d*d+d-d:d;d/d=d>d?d@d[d]d^d_d,d.d{d"],"floats":"dbXFLZ*PQ$:va*zip_!FBcKva0Uv~@yi`PTZ^2{t#|Tv5*(1FoTuc~Ac)]Tv~@yiuJ?D$b+PBv7v2[IS%LrH{Gtw2clk5L.Dge{x@t::+Hm({VBcxXp&Y|U.MJSZ]J^Nq@~{rlhne7KEEX.?R^K0ZXFVfwEc0efTCo/k7MJr1rJ&KGnxN%[H$.HbpB#LL7VWoNPX$t=N`>*Y9w?lTVDE:){@sK?@G]kI{}DcZR?.NTk@m1{W30zHxY|4&6/ueoDcR4v@kX#l$*NpXOY.ybn-.VTZ]G08s1SD8cTu0eFcp1(>QVrmOEbEA!H/=U_F=_kEG9du%1$SajQ]b`rb8wt{5JQlWJ0Er#^v@7N)j2IS{q6[|^P)Y0j(c~Ac]k^Q~Aak5L$p5z_vZBYF1}g5|`ZA0OdF,;jV%uHcudgH&Bll(u+D,W[/%q]!B$sJ2?I&iY7vCh(2)!ubSU?.(w,ltL_Ekdx)%^+Y7ZDPQpeubwMM-_mVwzycGklK%`|k14jq}o^=q)1waR57E_NUT~jA;?S;@1IcX/(GhETjbNMDKdZ6Qg[0v4)MpGdu0DoLEC3um2wb,aW7{!ZjuyrFYZLw`vnzW4%Kie_N*B;,{`kB_6wcZKG49YMjXQPqFFO@%(~Rrct!hs/N4xT8@axBS(Kc:afT+Uomq-nD?2n!?AqAw2GRBy5[gi8WOmwVWdzbiIE7Mq@jw)IFqX.Y7C^4}k6Ff.n2w~=4nDb(9,tc9+nU!:Hk&c&qsKrLW8;Gb9w${NsHmcZSd`cVs=LckUE5I4^iuQ)Cl@NxeQ>xflNW,AI&$!f>080;8RBb*en=N%$m^;WFw)^vT~C:dzeA^BAHy5--j74O+{qcj$VPvVVi4:hr=Q.?T*V7iJ:(O/|te#Jz/aK9F%Nci^{)0MZjV&DC.=pKX^hZLNSZy``:&mH?[#QBtkDbUscLu!Li}c+FWZnJTud>]:}v9(6[x:I5fxF]X+ocT?3^pvcjEWNr{Sr#([;Zh?ZOqaFbdGbX;])Sr`E*[w.:PWU)_EjjIh?FjGETGi;{0Z~2VXOcCd7$!gImxqi,b_b;om_L+vuV+9Fgt+M?]02SuQj6n%!&Cm5zw80l.59rf5k87!uT6Tu9q5GbSN|$QTK^x:>+8m}t;!Kx;?3lar.FMBNx~;]7qlb(6iPcCrG6U1dk.BQ?+{b;!}fX4xXuIN[fS2BR(auULKr0fz^[vZo@G`QlW,~rJ~2{pRN[DGq(`-IbKyw:FK>Cy=?-RD}ttB4WMERmcqbGutM?_BH@cj0;]5Pclvv_SnGl2QG-c)euKKZ)_.%2)lLft-fE_R1>4pu$7#UH`4,3+%vnA1qs9wX44ZFZL>m]ooKbY6$E23px:rI:$dPUF_I7fW]l+%eG4fn!74*>%pv]G^Pc=e%{~F,k1[v%WR_NK/{yyk1uS*.e5s-*#L]%!x;(DORH}avS#him_&Sscg@TTN84$}K]dDMbN?3PMck)J;J:.qPUC6.Mz)bkx=eG=AW,>QAZCfTu}^PcG([L?x7iEZ675`b;m9eYf(xV%GQeZpV_WAy,|bF+Xc/A{|)^Rc~m{,7sb9MX/{~3j|N]sLNb:#y.1JgGk:J:412ADM(Pr>GmU;eG1KETI-W)n:8u#^Pc3.t5|E6jF[T1|zo2%ta=m.-;Q3|d0vf6+rI8.3I:[8KH&$4-sR0k!d;spysL&by[J}u]fCPbW6+vlZ,1/oI:ue{:u(yYjI:iT9eG6&CS4wt7*~*u36Pch{+@%I4iO%]TQYAH*8:GIe}H.;OdEe%M?yZ#cZ.=ke`NK`w!@BYk|6ht?Y+P?kMErfZ;eJQb+zl4/CN)+*?-u]}t[h%3>L/jm*}FZDpK>9zw{+>u0GPc#u.(5j3k_xzNWWAH%_Z!/?|2{D~cy~JWQvJCB/Q?x.9[_mKG_KSm-xstBMMwe1!*[ZN9TsRbm!e+dP(?f8>+*gZ[h[&PG5Vk0&]F|arLP}wx+nmB^;Oc;+T#}`Mk9+8Ge_b;*wWG{>+;KVQc!Ap#&Vd{!?`@A:n2T6^KBqNl3-Ctht^=_QNEGKhVF)Rbe4GG@;:v,;E*GS#86b5)?sEl62;F[sV4)N=0d`qBCyOcp`Y$LNcnYyJ]%aOc-Rg*noXj:l4;laOc|03!.,kl5N39X&NcQI3T(l9mqM/2[%Ncu6={9+gjPNeVzQNc&3sZ?LWk[=dI2PNcq.(:/U}l!`xB2PNclhlK|Jam[fyByQNcGxx[>AZkm~dI[%Ncp+sXp3jj7TeVW&NcVXq=bm!mHS/2laOcT]YyN(nlwU39%aOcBk_ET}Zjcy4;CyOc04KA*wfn(EJ]>yOcpH9@PbKle>ZChPAH$,e?ln3uPOvcaYd56o0LV]b[[N^NQctA44Ll%-CtX?zQ.lvG~CGVC(Rbs7LJXJ%=p~E+41PU{VkL^tMj&9]F}rC-Zk?X6LE]F/OcA5b$U$NisIrJ_,b;&8N0[Pi(ax(cr%{xZ]x6dC~?v4YU[dl@u>QmEyst[ic4gvS-X?[&B.Qb2J`CzdV%t(G-G;2A#N]PFC6i?$}F+u-Qxgo1H@y]aHPc.?gS-fHi]+DPp89Af3M5D)rV]fxdiWKv-u[L%HO>WVkuf+o4:,Vkd7ht_g]/[*tG;S$;#kQb]zJ#%zT4#>[-^7tHw`xyPV,m@CbG=*1FO$EA`mt]:]Pc*Z=y#~klap{V)]6[`SX67BmBY?)d6_g7kDBTNvM/>P[8&yGKa~8k:d;su+B+,-P_1jC]zuOb[f~S7e[M]yJ:`K=N*AR#$[1li:eG}_7!Sp5N5Rj]:^Pc2VWF&v,lnAY3m09Ace|0q=]&/Cvei?pKSOM[0M?+gzfO;U~MY7{mc.7sgqW_>3+53/O]UmNb2ViAH,t_ebK:]lh2fW?LF%5jV=eGc5U_K>yC!6$;.^PccK5Q,/2k]ep0*IWUN=.$J{fI7f(em8`]Z,F=Xh;)Lw|8+L#.+#fm`&Ss3&P@SUE6s1F]t-Lbohb:~7uUolJ:p8Y[YOBCpN}l#(eG_O8JfMH5g`R;p^PcP2!1VuYmk3)%)]6[g_Y*IRV;#Otfi?pK6]dEZm($UFyuLh7$ipunL1qs4&Nwg(93^G-;o[Jb`-+0E#k$2L[-Qy2A$GjUN|in5tbG+/W5u=}0=_.&35PcbT[^Cz0m9k[-IYAHrQ+=uTLO|sZfk2[/vS#?H;r!e,7&.Gj?9MPl8,~r?5~Z57)_2G`&]xIbk&|^lQI$VoG-R}/N!57Se${muw.FtsM?4@%SDmA9uiPcT^>DYQqlo@~?m=6[u5@v4/o([Rdg2+>T^ic|Tfk77SrOt(-C)z8lf69rVyTzj@XWq5&2|hGb?b`Is~2SMqE+RJC&7$LMPDml=n?F-.Jv>>w=m8zVbXOc{&T.V`yi%Z3,[X9A~{!SIL:H+!Tg9g`z6Uw6l^f4ndHuZrRGw?`iMWNr]~hEsfn4L&cI37Db8nMDTN,l@c+F7kV4DfE>K;}vI,J&w1_.4Mu(:1pc89!F1yVkjBsrPTs%G9ZG^+A).X/N?Yj:A;%2!PNcRnC#,pHkuAHCX:!$DrOyke~XVw)8jH5=h#B]lcCbeM6ZtG#l=;WFGBzQvL&:1FeA3Reui3>!ScRBlCsc5%7?0ONiel}q-}/S&dN{+z($Am!8Q:&TZOIOMZLc2G[!n7Pjeb:C!qtMUx2W3{IT$9UUe)b.J{,2j1zb44@Ex5Qjq)IFAiC-T%C5Rl6F&j_NDGH>Iz>24QucK4GG~*3iOa1qt,$M|[2RJ:#!olOUcXB[2j6u5RKcW_)^H!3m6CrDjQ,X|0nKw#=Pn2I&+8d66^EBc{xbU(/I#w{jlyrF9k-QqbOzR5%K)t9A`No:J:m]6qxcJ,m5K_Fl_ouq5DcCxsjK}E77+lsH[Fg!V)^&?ZIc2|(Z^7?jO{PD[uWC{$y5w1vLLl^No&gLbsX9Svvbg+P*7S`moL_EkYLwuVrZk1DPuHb;HyW%k2.Ha6zcy*^4r,Ml)X{p!b=S/5I0Y~i5nBX[ggg@S&WO6tHcqO(6z?Ll6%;DJcZ6ay5R#~nG!3du^7p*ezEB(VsbPVH,@6AiNJ0EBwzQZT&)42ISqzJ&mB$-qN]2FxBceG#x}RejOEYpU#>Tq_dYK@a1}zB&P={.n]p]V+EcYmf$z$Mm+JpEVVi8*d[%M52Cer*8lW,%x|,2m6qb6aOCr!^kG#DEYePy53Z:=X=H%|Dc=E*J_BC[OX}WZ&8Arka!CT^mblAE]a`zpEXTa=19m}Dc9BrUGs0kqOJrHA*8JN/y(w%uW]Aby~$Mb0t:5#^Tr7,:^}t5nyVkD,}Dr1xPPRp-3m]&8xBc{Uyx-yQ{;kUZAE^NdYbQwrvnE0REX!hEV[[)Fg)HuiUc,pDS^86Mww56gq^N2$F#2o!kqLlr4D{w&j:WZniVY]qbERaM&0w==^OXDKrHBzDExCS/A,OXpb080U-:!b(:M_OX^2{tN^&xmx>/_,OX(sNUQ4p&df(/G-T14(6[f.!X9iGBVz8e4(6[svvT|wGBQA8e{~J&v3*z}[P]{azco{XD[4?I}ac[`~m2%u1Y>K#muqzto:Q1oCiKn`.2-QRbq:,1{xl*oWG-Y6=N~DX8/vXlO7}F/@W5NJ?yfdj((5Pc@D[,W0mmvsGRs89ATPF>T08OzpEd22i8:P+I}K,/]K*A1QoME;nj!Vat0sLvd}C$8tH]i|NbFMf!qnQPNLJ:qCPUxQBx3[;j9=eGjKl0mdp)FZ52}^Pcd.lAU#]lCTi6*IWUelL8~+~HHn(eattM^_p?ND/)@gE2=g@6a|6kchBsUk37*D`(nKy]>!KbxEL^+(hTj?[-I[g2Mp)TR)YmiAbG[TY60dJ,LHCVcHPcNWZL21|jix,/2WAHR6JZe6@Hk$)fS(H/LRR8uV?+pBWU9?]4-}vVb8Fgf_g7!-;xWB35%`!&LSb&]OIj6YNrZNTz5j2$crOOs&Eb8x0+d2{SIhB)IGg2lT`%9s52S%NclRg*|%3kR0DCW|JWFNo*TF{WHZUU{3~7)Q(;a(Bb`8e+M-fl+vMFd$6Ik$a:t~5Ey)J&Rl`#nHn(l9tcXmrWd+~i=IWq,HT^(`B[w,!!xU|t0G-_3>=uD?Ic47:7NN>l/SFD@0{xoc0.*f+MYv8A!QGF>LN9{uvbyp~Qg>2jBT_EospKOhiy9eCPNKJ&r[n?rot]bOAc/E*5Q=7m}@(p)K,X;Ad8uZc1wkX[,|FWM>#;1fFcLSxJ}Lal3]}D[PKv2X=?XGH]vMDcKLhMlA2m6uMt)u*8~e.+FX#u@@Ab9GJ=qVu>&7.V+!|t}wM*3VSm#7KEBghEE=-WI|Q;y>zb@5y.|}>yzPB]2|ubTE{I}MH%YkwL,hg2{lU-|w%mZ,RC.&D:5UgyvUXuO%xcv3LJ7e!mT(5Eh!]Nb#.,$fL95+#c6KrL~Xw8X)tJi#p2}wDEL65k![hr40C-MDd:iF925ewb!H&Dw3;>byAN3,08iL;{S/clh^IDjcx)S-J)6GGBcayc=g{6Q-`iwKtK@in2?8jK~P52f!+cgqDSS+lW|]$KfC8[G)lX7PjnmKKs?1M&]!H^U:ZmAfGqiXhu0FSNJGTjPYIra)e;v`T0+YEl3YMtAgDHtKG476lmm:^s5yhuxjO)7=Zi+x>p3Cr2CRKCs;Yi.~zE%)W,EUD#P~7F}dM&!Q5vk*TmEAHqsXhu-kHA?H,kF{(p>nB+oI)_GZ/uQ~rb2ip:(DxSSF$J6Pf2Q.(.oSZincJD%0Qzovp&}uik}s+DN*W5jzv[%#R;/nDcJQ$E2dqW]!I930qcxDB1iVjj,StJc[cu7>LP)}UuWXXeGo2F9K0SyliC!$C2fghQBRdn%oKpr7W4zp#+FG0O6NrbzRdxn]EY;zTx}!;NVu/{RF%mF%j.;g|tj{4xmghn*2=CrIg7e!T!evOkTU=C?0Z{$USSP]WjrIrDxNOZf-.1Ixmkf(`CQ6.Y0z!zsZhn;`PD|:I=eXgSClimId%CHE8J8sOK_TgVv~Ac8g^QFhNFm?bI[yyc9S[^4e_wJAUu2urcqF>5sQ~mZ.&Ljc^NBI6P2cam~=;PQ.)82Vs5vY`iKo/P|s^N@y#TkpRm&X)M]1du&~PATjYiKz*M#aJ&A8Q,YBMj-gyNvE^Nx1z5iyol3x)L@~I&5y)FDn9l3=)LTBa;aCc)uAfm;M35cVE;7iz@SzekzeuK1u5[>Hrwh/1lTKzNq7)8M:dXH?empIyMN*)8{TsxO{5l[^vLfkJ&N2EAzwjm7?wMTw)8PiaD;]gVc!+c`=g7sWb|i;@RQf:[_TY+?xVk!~7qG89!(TGWU=l(Pfwb02Y+Cw0Yw3DQ,e/N9wD=.nPieNrDP{,?dDl^|^%;pltc}gQ%WLnl}nu#**duDLq)9YU9O>yeMZLX(n4Q`^!IcP_89o/_?d[krL$p0K1EX!W)H8gV,#rb]or*uhuQ0B^T}E080@{1tH}ikhQDhC3Gln%Dy[iIJMDcrI;D{9{%63ROr!Dc%K3yZa~j!4^Tv|5[)0X?qw-H+QSbt}KWhpNZ75oV)ESbw}WCOHP)3b%;HBLbXZU3$l]!d`u9&]AbFfsL7wcT^3=;dExbLD;+Cf$CS]:Hn/tbZ;cCm7XX&[:;ECqb!_$%NyKFga9uYsqbwMB+mL!_GReV[2wb]X5vj,)QI|3DYl,:Z053boWjDlQD/yfE:f1RKXViBZTD5^7!;8EXRCjl,v#D=r!$*[5*,ZRkoPwE4/qL(m~39oel@q|C;ks%tBt4B}glYXpEAK8Jrpk+_uOO$pAcd^kM^Q!kkJ#Itdb;Xsyx72K9tY[d5hV_OD84S#.V0cf;1k!7%z9jwr}q+eV3?v1#d6:;*uyb:C|${$/1{yHSh8X[pYzY!yYko9DEj1Z{#V2wDtFV^nDcD%M#FaRjEPJT;6zH3L;73#NBsd,dsjoJR(5*XLwLD@2UwY)yr>fln}(pmI`zlYAGPP^Hkxsbe~t?YFR-y{|Wt1B&n(KJ5kqkk1pE;sb4qK(4@TR9GoDcIUE58V=_+i}2VoDcj23whK:?zob(5oDcq^1v/5Um!DAN`W^NvAzxx+inYj=PkV^N*fEWRUolVR(LC|5[1dl*ca>2|oSd%^q$sH{^QfdV$M~cdtp#-2$3k}RY,v+83y4J^_?lA3qqQ9cCgC?XW%+;>}ubYCQ#V>ZF^]]Tr|ZAlt8TZ%Mlo!DE0/gFfi[^b4+u;MDccQ*3aM@Ju9295#Ac9EcJYEOi+w7G^k28"},{"name":"PH y PV","color":"#cccccc","opacity":1.0,"verts":"1dacaacdbcabcdbfabfagfdgfagadgaaaadaa","facets":"1abccbdecffcdefgeghijhihgakbalkfdbfbkigfifkjleaelhjeceakliilj","wires":["1abcaacdecdbcabc","1abcdbcdbfabfabc","1agfdgfdbfabfagf","1agfagadgadgfagf","1aaaaacdecdaaaaa","1abcaacaaaagaagfabfabc","1daadecdbcdbfdgfdgadea","1aaadaadgaagaaea"],"faceColors":[],"facesToFacets":["1ab","1cd","1ef","1gh","1ij","1klmn","1opqr","1st"],"floats":"RaTu72mbqRKvc0Uv(5Nv^2{t_?Tv[UmC:mX36#?t"}],"compressed":true,"base":"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!#$%&()*+-:;/=>?@[]^_,.{|}~`","baseFloat":",.-0123456789"};
+
+            // Z is up for FreeCAD
+            THREE.Object3D.DefaultUp = new THREE.Vector3(0, 0, 1);
+
+            const defaultWireColor = new THREE.Color('rgb(0,0,0)');
+            const defaultWireLineWidth = 2; // in pixels
+
+            const raycasterObj = []; // list of obj that can mouseover highlight
+
+            const canvas = document.querySelector('#mainCanvas');
+
+            const scene = new THREE.Scene();
+
+            const renderer = new THREE.WebGLRenderer({
+                alpha: true,
+                antialias: true,
+                canvas: canvas
+            }); // Clear bg so we can set it with css
+            renderer.setClearColor(0x000000, 0);
+
+            let renderRequested = false;
+
+            // HemisphereLight gives different colors of light from the top
+            // and bottom simulating reflected light from the 'ground' and
+            // 'sky'
+            scene.add(new THREE.HemisphereLight(0xC7E8FF, 0xFFE3B3, 0.4));
+
+            const dLight1 = new THREE.DirectionalLight(0xffffff, 0.4);
+            dLight1.position.set(5, -2, 3);
+            scene.add(dLight1);
+            const dLight2 = new THREE.DirectionalLight(0xffffff, 0.4);
+            dLight2.position.set(-5, 2, 3);
+            scene.add(dLight2);
+
+            if (data.compressed) {
+                const base = data.base;
+                const baseFloat = data.baseFloat;
+
+                function baseDecode(input) {
+                    const baseCt = base.length;
+                    const output = [];
+                    const len = parseInt(input[0]); // num chars of each element
+                    for (let i = 1; i < input.length; i += len) {
+                        const str = input.substring(i, i + len).trim();
+                        let val = 0;
+                        for (let s = 0; s < str.length; s++) {
+                            const ind = base.indexOf(str[s]);
+                            val += ind * Math.pow(baseCt, s);
+                        }
+                        output.push(val);
+                    }
+                    return output;
+                }
+
+                function floatDecode(input) {
+                    const baseCt = base.length;
+                    const baseFloatCt = baseFloat.length;
+                    let numString = '';
+                    for (let i = 0; i < input.length; i += 4) {
+                        const b90chunk = input.substring(i, i + 4).trim();
+                        let quotient = 0;
+                        for (let s = 0; s < b90chunk.length; s++) {
+                            const ind = base.indexOf(b90chunk[s]);
+                            quotient += ind * Math.pow(baseCt, s);
+                        }
+                        let buffer = '';
+                        for (let s = 0; s < 7; s++) {
+                            buffer = baseFloat[quotient % baseFloatCt] + buffer;
+                            quotient = parseInt(quotient / baseFloatCt);
+                        }
+                        numString += buffer;
+                    }
+                    let trailingCommas = 0;
+                    for (let s = 1; s < 7; s++) {
+                        if (numString[numString.length - s] == baseFloat[0]) {
+                            trailingCommas++;
+                        }
+                    }
+                    numString = numString.substring(0, numString.length - trailingCommas);
+                    return numString;
+                }
+
+                // Decode from base90 and distribute the floats
+                for (const obj of data.objects) {
+                    obj.floats = JSON.parse('[' + floatDecode(obj.floats) + ']');
+                    obj.verts = baseDecode(obj.verts).map(x => obj.floats[x]);
+                    obj.facets = baseDecode(obj.facets);
+                    obj.wires = obj.wires.map(w => baseDecode(w).map(x => obj.floats[x]));
+                    obj.facesToFacets = obj.facesToFacets.map(x => baseDecode(x));
+                }
+            }
+
+            // Get bounds for global clipping
+            const globalMaxMin = [{min: null, max: null},
+                                  {min: null, max: null},
+                                  {min: null, max: null}];
+            for (const obj of data.objects) {
+                for (let v = 0; v < obj.verts.length; v++) {
+                    if (globalMaxMin[v % 3] === null
+                        || obj.verts[v] < globalMaxMin[v % 3].min) {
+                        globalMaxMin[v % 3].min = obj.verts[v];
+                    }
+                    if (globalMaxMin[v % 3] === null
+                        || obj.verts[v] > globalMaxMin[v % 3].max) {
+                        globalMaxMin[v % 3].max = obj.verts[v];
+                    }
+                }
+            }
+            let bigrange = 0;
+            // add a little extra
+            for (const i of globalMaxMin) {
+                const range = i.max - i.min;
+                if (range > bigrange) {
+                    bigrange = range;
+                }
+                i.min -= range * 0.01;
+                i.max += range * 0.01;
+            }
+
+            const camCenter = new THREE.Vector3(
+                0.5 * (globalMaxMin[0].max - globalMaxMin[0].min) + globalMaxMin[0].min,
+                0.5 * (globalMaxMin[1].max - globalMaxMin[1].min) + globalMaxMin[1].min,
+                0.5 * (globalMaxMin[2].max - globalMaxMin[2].min) + globalMaxMin[2].min );
+            const viewSize = 1.5 * bigrange; // make the view area a little bigger than the object
+            const aspectRatio = canvas.clientWidth / canvas.clientHeight;
+            const originalAspect = aspectRatio;
+
+            function initCam(camera) {
+                // XXX this needs to treat the perspective and orthographic
+                // cameras differently
+                camera.position.set(
+                    data.camera.position_x,
+                    data.camera.position_y,
+                    data.camera.position_z);
+                camera.lookAt(camCenter);
+                camera.updateMatrixWorld();
+            }
+
+            let cameraType = data.camera.type;
+            const persCamera = new THREE.PerspectiveCamera(
+                50, aspectRatio, 1, 100000);
+            initCam(persCamera);
+            const orthCamera = new THREE.OrthographicCamera(
+                -aspectRatio * viewSize / 2, aspectRatio * viewSize / 2,
+                viewSize / 2, -viewSize / 2, -100000, 100000);
+            initCam(orthCamera);
+
+            function assignMesh(positions, color, opacity, faces) {
+                const baseGeometry = new THREE.BufferGeometry();
+                baseGeometry.setAttribute('position', new THREE.BufferAttribute(
+                    positions, 3));
+
+                // EdgeSplitModifier is used to combine verts so that smoothing normals can be generated WITHOUT removing the hard edges of the design
+                // REF: https://threejs.org/examples/?q=edge#webgl_modifier_edgesplit - https://github.com/mrdoob/three.js/pull/20535
+                const edgeSplit = new EdgeSplitModifier();
+                const cutOffAngle = 20;
+                const geometry = edgeSplit.modify(
+                    baseGeometry, cutOffAngle * Math.PI / 180);
+                geometry.computeVertexNormals();
+                geometry.computeBoundingSphere();
+
+                const material = new THREE.MeshLambertMaterial({
+                    color: color,
+                    side: THREE.DoubleSide,
+                    vertexColors: false,
+                    flatShading: false,
+                    opacity: opacity,
+                    transparent: opacity != 1.0,
+                    fog: false
+                });
+
+                const meshobj = new THREE.Mesh(geometry, material);
+                meshobj.name = meshobj.uuid;
+                faces.push(meshobj.uuid);
+                scene.add(meshobj);
+                raycasterObj.push(meshobj);
+            }
+
+            const objects = [];
+            for (const obj of data.objects) {
+                // Each face gets its own material because they each can
+                // have different colors
+                const faces = [];
+                if (obj.facesToFacets.length > 0) {
+                    for (let f=0; f < obj.facesToFacets.length; f++) {
+                        const facecolor = obj.faceColors.length > 0 ? obj.faceColors[f] : obj.color;
+                        const positions = new Float32Array(obj.facesToFacets[f].length * 9);
+                        for (let a=0; a < obj.facesToFacets[f].length; a++) {
+                            for (let b=0; b < 3; b++) {
+                                for (let c=0; c < 3; c++) {
+                                    positions[9 * a + 3 * b + c] = obj.verts[3 * obj.facets[3 * obj.facesToFacets[f][a] + b ] + c ];
+                                }
+                            }
+                        }
+                        assignMesh(positions, facecolor, obj.opacity, faces);
+                    }
+                } else {
+                    // No facesToFacets means that there was a tessellate()
+                    // mismatch inside FreeCAD. Use all facets in object to
+                    // create this mesh
+                    const positions = new Float32Array(obj.facets.length * 3);
+                    for (let a=0; a < obj.facets.length; a++) {
+                        for (let b=0; b < 3; b++) {
+                            positions[3 * a + b] = obj.verts[3 * obj.facets[a] + b];
+                        }
+                    }
+                    assignMesh(positions, obj.color, obj.opacity, faces);
+                }
+
+                // Wires
+                // cannot have lines in WebGL that are wider than 1px due to browser limitations so Line2 workaround lib is used
+                // REF: https://threejs.org/examples/?q=fat#webgl_lines_fat - https://jsfiddle.net/brLk6aud/1/
+                // This material is shared by all wires in this object
+                const wirematerial = new LineMaterial( {
+                    color: defaultWireColor,
+                    linewidth: defaultWireLineWidth,
+                    dashed: false, dashSize: 1, gapSize: 1, dashScale: 3
+                } );
+                wirematerial.resolution.set(
+                    canvas.clientWidth * window.devicePixelRatio,
+                    canvas.clientHeight * window.devicePixelRatio);
+
+                const wires = [];
+                for (const w of obj.wires) {
+                    const wiregeometry = new LineGeometry();
+                    wiregeometry.setPositions(w);
+                    const wire = new Line2(wiregeometry, wirematerial);
+                    wire.computeLineDistances();
+                    wire.scale.set(1, 1, 1);
+                    wire.name = wire.uuid;
+                    scene.add(wire);
+                    wires.push(wire.name);
+                }
+                objects.push({
+                    data: obj,
+                    faces: faces,
+                    wires: wires,
+                    wirematerial: wirematerial
+                });
+            }
+
+            // ---- GUI Init ----
+            const gui = new GUI({ width: 300 });
+            const guiparams = {
+                wiretype: 'Normal',
+                wirewidth: defaultWireLineWidth,
+                wirecolor: '#' + defaultWireColor.getHexString(),
+                clippingx: 100,
+                clippingy: 100,
+                clippingz: 100,
+                cameraType: cameraType,
+                navright: function() { navChange([1,  0, 0]); },
+                navtop:   function() { navChange([0,  0, 1]); },
+                navfront: function() { navChange([0, -1, 0]); }
+            };
+
+            // ---- Wires ----
+            const wiretypes = { Normal: 'Normal', Dashed: 'Dashed', None: 'None' };
+
+            const wireFolder = gui.addFolder('Wire');
+            wireFolder.add(guiparams, 'wiretype', wiretypes).name('Wire Display').onChange(wireChange);
+            wireFolder.add(guiparams, 'wirewidth').min(1).max(5).step(1).name('Wire Width').onChange(wireChange);
+            wireFolder.addColor(guiparams, 'wirecolor').name('Wire Color').onChange(wireChange);
+
+            function wireChange() {
+                for (const obj of objects) {
+                    const m = obj.wirematerial;
+                    if (m.dashed) {
+                        if (guiparams.wiretype != 'Dashed') {
+                            m.dashed = false;
+                            delete m.defines.USE_DASH;
+                        }
+                    } else {
+                        if (guiparams.wiretype == 'Dashed') {
+                            m.dashed = true;
+                            // Dashed lines require this as of r122. delete if not dashed
+                            m.defines.USE_DASH = ""; // https://discourse.threejs.org/t/dashed-line2-material/10825
+                        }
+                    }
+                    if (guiparams.wiretype == 'None') {
+                        m.visible = false;
+                    } else {
+                        m.visible = true;
+                    }
+                    m.linewidth = guiparams.wirewidth;
+                    m.color = new THREE.Color(guiparams.wirecolor);
+                    m.needsUpdate = true;
+                }
+                requestRender();
+            }
+            wireChange();
+
+            // ---- Clipping ----
+            const clippingFolder = gui.addFolder('Clipping');
+            clippingFolder.add(guiparams, 'clippingx').min(0).max(100).step(1).name('X-Axis Clipping').onChange(clippingChange);
+            clippingFolder.add(guiparams, 'clippingy').min(0).max(100).step(1).name('Y-Axis Clipping').onChange(clippingChange);
+            clippingFolder.add(guiparams, 'clippingz').min(0).max(100).step(1).name('Z-Axis Clipping').onChange(clippingChange);
+
+            const clipPlaneX = new THREE.Plane(new THREE.Vector3( -1, 0, 0 ), 0);
+            const clipPlaneY = new THREE.Plane(new THREE.Vector3( 0, -1, 0 ), 0);
+            const clipPlaneZ = new THREE.Plane(new THREE.Vector3( 0, 0, -1 ), 0);
+
+            function clippingChange() {
+                if (guiparams.clippingx < 100 || guiparams.clippingy < 100 || guiparams.clippingz < 100) {
+                    if (renderer.clippingPlanes.length == 0) {
+                        renderer.clippingPlanes.push(clipPlaneX, clipPlaneY, clipPlaneZ);
+                    }
+                }
+                clipPlaneX.constant = (globalMaxMin[0].max - globalMaxMin[0].min) * guiparams.clippingx / 100.0 + globalMaxMin[0].min;
+                clipPlaneY.constant = (globalMaxMin[1].max - globalMaxMin[1].min) * guiparams.clippingy / 100.0 + globalMaxMin[1].min;
+                clipPlaneZ.constant = (globalMaxMin[2].max - globalMaxMin[2].min) * guiparams.clippingz / 100.0 + globalMaxMin[2].min;
+                requestRender();
+            }
+
+            // ---- Camera & Navigation ----
+            const camFolder = gui.addFolder('Camera');
+            const cameraTypes = { Perspective: 'Perspective', Orthographic: 'Orthographic' };
+            camFolder.add(guiparams, 'cameraType', cameraTypes).name('Camera type').onChange(cameraChange);
+            camFolder.add(guiparams, 'navright').name('View Right');
+            camFolder.add(guiparams, 'navtop').name('View Top');
+            camFolder.add(guiparams, 'navfront').name('View Front');
+
+            function navChange(v) {
+                const t = new THREE.Vector3();
+                new THREE.Box3().setFromObject(scene).getSize(t);
+                persControls.object.position.set(
+                    v[0] * t.x * 2 + camCenter.x,
+                    v[1] * t.y * 2 + camCenter.y,
+                    v[2] * t.z * 2 + camCenter.z);
+                persControls.target = camCenter;
+                persControls.update();
+                orthControls.object.position.set(
+                    v[0] * t.x + camCenter.x,
+                    v[1] * t.y + camCenter.y,
+                    v[2] * t.z + camCenter.z);
+                orthControls.target = camCenter;
+                orthControls.update();
+                // controls.update() implicitly calls requestRender()
+            }
+
+            function cameraChange(v) {
+                cameraType = v;
+                requestRender();
+            }
+
+            const guiObjects = gui.addFolder('Objects');
+            for (const obj of objects) {
+                // Ignore objects with no vertices
+                if (obj.data.verts.length > 0) {
+                    const guiObjData = {
+                        obj: obj, color: obj.data.color, opacity: obj.data.opacity };
+                    const guiObject = guiObjects.addFolder(obj.data.name);
+                    guiObject.addColor(guiObjData, 'color').name('Color').onChange(GUIObjectChange);
+                    guiObject.add(guiObjData, 'opacity').min(0.0).max(1.0).step(0.05).name('Opacity').onChange(GUIObjectChange);
+                }
+            }
+
+            function GUIObjectChange(v) {
+                for (const f of this.object.obj.faces) {
+                    const m = scene.getObjectByName(f).material;
+                    if (this.property == 'color') {
+                        m.color.setStyle(v);
+                    }
+                    if (this.property == 'opacity') {
+                        m.opacity = v;
+                        m.transparent = (v != 1.0);
+                    }
+                }
+                if (this.property == 'opacity') {
+                    const m = this.object.obj.wirematerial;
+                    m.opacity = v;
+                    m.transparent = (v != 1.0);
+                }
+                requestRender();
+            }
+
+            // Make simple orientation arrows and box - REF: http://jsfiddle.net/b97zd1a3/16/
+            const arrowCanvas = document.querySelector('#arrowCanvas');
+            const arrowRenderer = new THREE.WebGLRenderer({
+                alpha: true,
+                canvas: arrowCanvas
+            }); // clear
+            arrowRenderer.setClearColor(0x000000, 0);
+            arrowRenderer.setSize(arrowCanvas.clientWidth * window.devicePixelRatio,
+                                  arrowCanvas.clientHeight * window.devicePixelRatio,
+                                  false);
+
+            const arrowScene = new THREE.Scene();
+
+            const arrowCamera = new THREE.PerspectiveCamera(
+                50, arrowCanvas.clientWidth / arrowCanvas.clientHeight, 1, 500 );
+            arrowCamera.up = persCamera.up; // important!
+
+            const arrowPos = new THREE.Vector3(0, 0, 0);
+            arrowScene.add(new THREE.ArrowHelper(
+                new THREE.Vector3(1, 0, 0), arrowPos, 60, 0x7F2020, 20, 10));
+            arrowScene.add(new THREE.ArrowHelper(
+                new THREE.Vector3(0, 1, 0), arrowPos, 60, 0x207F20, 20, 10));
+            arrowScene.add(new THREE.ArrowHelper(
+                new THREE.Vector3(0, 0, 1), arrowPos, 60, 0x20207F, 20, 10));
+            arrowScene.add(new THREE.Mesh(
+                new THREE.BoxGeometry(40, 40, 40),
+                new THREE.MeshLambertMaterial(
+                    { color: 0xaaaaaa, flatShading: false })
+            ));
+            arrowScene.add(new THREE.HemisphereLight(0xC7E8FF, 0xFFE3B3, 1.2));
+
+            // Controls
+            const persControls = new OrbitControls(persCamera, renderer.domElement);
+            persControls.target = camCenter; // rotate around center of parts
+            // persControls.enablePan = false;
+            // persControls.enableDamping = true;
+            persControls.update();
+            const orthControls = new OrbitControls(orthCamera, renderer.domElement);
+            orthControls.target = camCenter; // rotate around center of parts
+            // orthControls.enablePan = false;
+            // orthControls.enableDamping = true;
+            orthControls.update();
+
+            function render() {
+                renderRequested = false;
+                persControls.update();
+                if (cameraType == 'Perspective') {
+                    arrowCamera.position.copy(persCamera.position);
+                    arrowCamera.position.sub(persControls.target);
+                }
+                orthControls.update();
+                if (cameraType == 'Orthographic') {
+                    arrowCamera.position.copy(orthCamera.position);
+                    arrowCamera.position.sub(orthControls.target);
+                }
+                arrowCamera.lookAt(arrowScene.position);
+                arrowCamera.position.setLength(200);
+
+                if (cameraType == 'Perspective') {
+                    renderer.render(scene, persCamera);
+                }
+                if (cameraType == 'Orthographic') {
+                    renderer.render(scene, orthCamera);
+                }
+                arrowRenderer.render(arrowScene, arrowCamera);
+            };
+
+            function requestRender() {
+                if (!renderRequested) {
+                    renderRequested = true;
+                    requestAnimationFrame(render);
+                }
+            }
+
+            persControls.addEventListener('change', requestRender);
+            orthControls.addEventListener('change', requestRender);
+            renderer.domElement.addEventListener('mousemove', onMouseMove);
+            window.addEventListener('resize', onMainCanvasResize, false);
+
+            onMainCanvasResize();
+            requestRender();
+
+            function onMainCanvasResize() {
+                const pixelRatio = window.devicePixelRatio;
+                const width = canvas.clientWidth * pixelRatio | 0;
+                const height = canvas.clientHeight * pixelRatio | 0;
+                const needResize = canvas.width !== width || canvas.height !== height;
+                const aspect = canvas.clientWidth / canvas.clientHeight;
+                if (needResize) {
+                    renderer.setSize(width, height, false);
+
+                    // See https://stackoverflow.com/questions/39373113/three-js-resize-window-not-scaling-properly
+                    const change = originalAspect / aspect;
+                    const newSize = viewSize * change;
+                    orthCamera.left = -aspect * newSize / 2;
+                    orthCamera.right = aspect * newSize  / 2;
+                    orthCamera.top = newSize / 2;
+                    orthCamera.bottom = -newSize / 2;
+                    orthCamera.updateProjectionMatrix();
+
+                    persCamera.aspect = canvas.clientWidth / canvas.clientHeight;
+                    persCamera.updateProjectionMatrix();
+                }
+
+                for (const obj of objects) {
+                    obj.wirematerial.resolution.set(width, height);
+                }
+                requestRender();
+            }
+
+            // XXX use mouse click to toggle the gui for the selected object?
+
+            function onMouseMove(e)  {
+                let c = false;
+                if (cameraType == 'Orthographic') {
+                    c = orthCamera;
+                }
+                if (cameraType == 'Perspective') {
+                    c = persCamera;
+                }
+                if (!c) {
+                    return;
+                }
+
+                const raycaster = new THREE.Raycaster();
+                raycaster.setFromCamera(new THREE.Vector2(
+                    (e.clientX / canvas.clientWidth) * 2 - 1,
+                    -(e.clientY / canvas.clientHeight) * 2 + 1),
+                                        c);
+                const intersects = raycaster.intersectObjects(raycasterObj);
+
+                let chosen = '';
+                for (const i of intersects) {
+                    const m = i.object.material;
+                    if (m.opacity > 0) {
+                        if (m.emissive.getHex() == 0x000000) {
+                            m.emissive.setHex( 0x777777 );
+                            m.needsUpdate = true;
+                            requestRender();
+                        }
+                        chosen = i.object.name;
+                        break;
+                    }
+                }
+                for (const r of raycasterObj) {
+                    if (r.name == chosen) {
+                        continue;
+                    }
+                    if (r.material.emissive.getHex() != 0x000000) {
+                        r.material.emissive.setHex(0x000000);
+                        r.material.needsUpdate = true;
+                        requestRender();
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
