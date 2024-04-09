@@ -1,8 +1,8 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv_sincolor.xml.gz"
 
-															//GRUPO M+ La Liga
 
-#EXTINF:-1 tvg-id="M+ LaLiga TV HD", group-title="M+ La Liga", M. LaLiga 1080 MultiAudio
+
+#EXTINF:-1 tvg-id="M+ LaLiga TV HD", group-title="M+ LA LIGA", M. LaLiga 1080 MultiAudio
 acestream://aa82e7d4f03061f2144a2f4be22f2e2210d42280
 
 #EXTINF:-1 tvg-id="M+ LaLiga TV HD", M. LaLiga 1080 MultiAudio
@@ -26,9 +26,9 @@ acestream://26029f72a4ca831d09deefe89534818db1d105bc
 #EXTINF:-1 tvg-id="M+ LaLiga TV 2 HD", M. LaLiga 2 720
 acestream://80126b240f3e4e004754fd8f8103e857ab2556a0
 
-															//GRUPO DAZN La Liga
 
-#EXTINF:-1 tvg-id="DAZN LaLiga HD", group-title="DAZN La Liga", DAZN LaLiga 1080 MultiAudio
+
+#EXTINF:-1 tvg-id="DAZN LaLiga HD", group-title="DAZN LA LIGA", DAZN LaLiga 1080 MultiAudio
 acestream://1960a9be8ae9e8c755330218eac4c5805466290a
 
 #EXTINF:-1 tvg-id="DAZN LaLiga HD", DAZN LaLiga 1080 MultiAudio
@@ -43,26 +43,9 @@ acestream://e33e666c393ef04ebe99a9b92135d2e0b48c4d10
 #EXTINF:-1 tvg-id="DAZN LaLiga 2 HD", DAZN LaLiga 2 720 MultiAudio
 acestream://02b9307c5c97c86914cc5939d6bbeb5b4ec60b47
 
-															//GRUPO La Liga HyperMotion
 
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD", group-title="La Liga HyperMotion", LaLiga HyperMotion 1080
-acestream://4c46585214b23b1d802ef2168060c7649a3894cf
 
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD", LaLiga HyperMotion 720
-acestream://06b367c22394a1358c9cefa0cb5d0b64b9b2b3f4
-
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2", LaLiga HyperMotion 2 1080
-acestream://d81b4f2f3fde433539c097b2edc9b587ca47b087
-
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2", LaLiga HyperMotion 2 720
-acestream://2709d0ab86cb6ce7ba4d3ad188d7fa80668f2924
-
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 3", LaLiga HyperMotion 3 1080
-acestream://b4a076c1f67a5c1f1ba899ac61b9401b1dc30f41
-
-															//GRUPO M+ Deportes
-
-#EXTINF:-1 tvg-id="M+ Deportes HD", group-title="M+ Deportes", M. Deportes 1080
+#EXTINF:-1 tvg-id="M+ Deportes HD", group-title="M+ DEPORTES", M. Deportes 1080
 acestream://d00223931b1854163e24c5c22475015d7d45c112
 
 #EXTINF:-1 tvg-id="M+ Deportes HD", M. Deportes 720
@@ -77,9 +60,9 @@ acestream://aee0a595220e0f1c2fee725fd1dbc602d7152a9a
 #EXTINF:-1 tvg-id="M+ Deportes 4", M. Deportes 4 1080
 acestream://42e83c337ece0af9ca7808859f84c7960e9cb6f5
 
-															//GRUPO M+ Liga de Campeones
 
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD", group-title="M+ Liga de Campeones", M.L. Campeones 1080 MultiAudio
+
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD", group-title="M+ LIGA DE CAMPEONES", M.L. Campeones 1080 MultiAudio
 acestream://931b1984badcb821df7b47a66ac0835ac871b51c
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD", M.L. Campeones 1080 MultiAudio
@@ -106,29 +89,9 @@ acestream://d59fe9978eed49f256b312a60671b5bce43d3f24
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 4", M.L. Campeones 4 1080
 acestream://f2df4f96b23388b45e75d848a48a510cf8af560f
 
-															//GRUPO La Copa
 
-	//#EXTINF:-1 tvg-id="Copa 1080", group-title="La Copa", Copa 1080
-	//acestream://5a236fbbe6e5bbfec03db548c244a7c858d675c0
-	//#EXTINF:-1 tvg-id="Copa 1080", Copa 1080
-	//acestream://8ba764f6a3bce6eae87ec71208fad1aa3a20528d
-	//#EXTINF:-1 tvg-id="Copa 1080 plus", Copa 1080 plus
-	//acestream://d6cdd724a97fcf851e7ef641c28d6beb8663496e
-	//#EXTINF:-1 tvg-id="Copa 1080 MultiAudio", Copa 1080 MultiAudio
-	//acestream://3a4c8ac955d451bf3c29b45256e74aa0ea82d281
-	//#EXTINF:-1 tvg-id="Copa 1080", Copa 1080
-	//acestream://7d70685696722c2b1b48a5ae1a7f92c445d9443d
-	//#EXTINF:-1 tvg-id="Copa 720", Copa 720
-	//acestream://dab7cab5d6d177df36c3b333ca363c2266d91a03
-															//Golf
-	//#EXTINF:-1 tvg-id="M+ Golf HD", M. Golf 1080
-	//acestream://4f945b0ba4206fa2676b61e9eaa465ac3dcc8122
-	//#EXTINF:-1 tvg-id="M+ Golf 2 HD", M. Golf 2 1080
-	//acestream://9a4f3ae6563668b7709dac509dedc709441b3fd9
 
-															//GRUPO Movistar+ Vamos
-
-#EXTINF:-1 tvg-id="Movistar Plus+ HD", group-title="Movistar+ Vamos", Movistar Plus
+#EXTINF:-1 tvg-id="Movistar Plus+ HD", group-title="MOVISTAR+ VAMOS", Movistar Plus
 acestream://5a236fbbe6e5bbfec03db548c244a7c858d675c0
 
 #EXTINF:-1 tvg-id="M+ Vamos HD", #Vamos 1080
@@ -140,7 +103,7 @@ acestream://3bba7c95857c2502c7e03ced1a6a9b00eb567fa0
 #EXTINF:-1 tvg-id="M+ Ellas Vamos HD", #Ellas 1080
 acestream://67654e63b5065cdaa6c8e8d41bb5428b42b32830
 
-															//GRUPO DAZN
+
 
 #EXTINF:-1 tvg-id="DAZN 1 HD", group-title="DAZN", DAZN 1 1080
 acestream://8ca07071b39185431f8e940ec98d1add9e561639
@@ -154,7 +117,7 @@ acestream://60dbeeb299ec04bf02bc7426d827547599d3d9fc
 #EXTINF:-1 tvg-id="DAZN 2 HD", DAZN 2 720
 acestream://7aa402bab9fff43258fbcf401881a39475f30aaf
 
-															//GRUPO DAZN F1
+
 
 #EXTINF:-1 tvg-id="DAZN F1 HD", group-title="DAZN F1", DAZN F1 UHD (Sólo Android)
 acestream://6b94479c24898700089e6b87d28a3ccc72dc4041
@@ -171,9 +134,9 @@ acestream://e1fcad9de0c782c157fde6377805c58297ab65c2
 #EXTINF:-1 tvg-id="DAZN F1 HD", DAZN F1 MultiCámara (Fórmula 1)
 acestream://968627d24eec1c16b51d88e4a4a6c02211e3346e
 
-															//GRUPO Canales Deportes
 
-#EXTINF:-1 tvg-id="Eurosport 1 HD", group-title="Canales Deportes", EuroSport 1 1080
+
+#EXTINF:-1 tvg-id="Eurosport 1 HD", group-title="DEPORTES", EuroSport 1 1080
 acestream://5e4cd48c79f991fcbee2de8b9d30c4b16de3b952
 
 #EXTINF:-1 tvg-id="Eurosport 2", EuroSport 2 1080
@@ -206,30 +169,23 @@ acestream://162942adc047d0f78eac056effbe5bbec54a5e51
 #EXTINF:-1 tvg-id="FOX SPORTS 3", FOX Sport 3
 acestream://e454681a152a86da504e63694f17f90d0586867d
 
-															//GRUPO España
 
-#EXTINF:-1 tvg-id="AMC HD",group-title="España",AMC
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:87_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Sundance TV",Sundance TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:88_HD.smil/manifest.m3u8
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD", group-title="LA LIGA HYPERMOTION", LaLiga HyperMotion 1080
+acestream://4c46585214b23b1d802ef2168060c7649a3894cf
 
-#EXTINF:-1 tvg-id="Be Mad",Be Mad
-https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:20_HD.smil/index.m3u8
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD", LaLiga HyperMotion 720
+acestream://06b367c22394a1358c9cefa0cb5d0b64b9b2b3f4
 
-#EXTINF:-1 tvg-id="Calle 13 HD",Calle 13 Universal
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:96_HD.smil/manifest.m3u8
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2", LaLiga HyperMotion 2 1080
+acestream://d81b4f2f3fde433539c097b2edc9b587ca47b087
 
-#EXTINF:-1 tvg-id="La 1 HD",La 1
-https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2", LaLiga HyperMotion 2 720
+acestream://2709d0ab86cb6ce7ba4d3ad188d7fa80668f2924
 
-#EXTINF:-1 tvg-id="La 2",La 2
-https://rtvelivestream-clnx.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 3", LaLiga HyperMotion 3 1080
+acestream://b4a076c1f67a5c1f1ba899ac61b9401b1dc30f41
 
-#EXTINF:-1 tvg-id="Cuatro HD",Cuatro
-https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:9_HD.smil/index.m3u8
 
-#EXTINF:-1 tvg-id="La Sexta HD",La Sexta
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:11_HD.smil/index.m3u8
 
 
