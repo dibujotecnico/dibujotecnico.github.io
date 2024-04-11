@@ -19,7 +19,7 @@ https://rtvelivestream-clnx.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La 2" group-title="GENERAL",La 2
 https://ztnr.rtve.es/ztnr/1688885.m3u8
 
-#EXTINF:-1 tvg-id="La Otra" group-title="AUTONÓMICA",La Otra
+#EXTINF:-1 tvg-id="La Otra" group-title="AUTONÓMICAS",La Otra
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:3_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Teledeporte" group-title="DEPORTES",TPD
@@ -82,19 +82,19 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:26_HD.smil/mani
 #EXTINF:-1 tvg-id="Real Madrid TV" group-title="DEPORTES",Real Madrid TV
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:27_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Canal Sur HD" group-title="AUTONÓMICA",Canal Sur
+#EXTINF:-1 tvg-id="Canal Sur HD" group-title="AUTONÓMICAS",Canal Sur
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:29_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Castilla la Mancha TV", group-title="AUTONÓMICA"cmm
+#EXTINF:-1 tvg-id="Castilla la Mancha TV" group-title="AUTONÓMICAS",cmm
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:31_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Telemadrid", group-title="AUTONÓMICA"Telemadrid
+#EXTINF:-1 tvg-id="Telemadrid" group-title="AUTONÓMICAS",Telemadrid
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:32_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Canal Extremadura" group-title="AUTONÓMICA",Canal Extremadura
+#EXTINF:-1 tvg-id="Canal Extremadura" group-title="AUTONÓMICAS",Canal Extremadura
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:34_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="La 7" group-title="AUTONÓMICA",La 7
+#EXTINF:-1 tvg-id="La 7" group-title="AUTONÓMICAS",La 7
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:35_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Iberalia pesca" group-title="OTRAS",Iberalia Pesca
@@ -112,7 +112,7 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:39_HD.smil/mani
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="DEPORTES",EuroSport 1
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:43_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="TVG - TV Galicia" group-title="AUTONÓMICA",TV Galicia
+#EXTINF:-1 tvg-id="TVG - TV Galicia" group-title="AUTONÓMICAS",TV Galicia
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:47_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Sevilla FC Televisión" group-title="DEPORTES",Sevilla FC TV
@@ -136,7 +136,7 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/mani
 #EXTINF:-1 tvg-id="Cosmo HD" group-title="CINE",COSMO
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:75_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="La 8" group-title="AUTONÓMICA",La 8
+#EXTINF:-1 tvg-id="La 8" group-title="AUTONÓMICAS",La 8
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:80_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="SyFy HD" group-title="CINE",SyFy
@@ -175,13 +175,10 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:92_HD.smil/mani
 #EXTINF:-1 tvg-id="Calle 13 HD" group-title="CINE",Calle 13 Universal
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:96_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="BOM" group-title="CINE",BOM
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:97_HD.smil/manifest.m3u8
+#EXTINF:-1 tvg-id="BOM Cine" group-title="CINE",BOM
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:97_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="6" group-title="OTRAS",6
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge5/smil:101_HD.smil/manifest.m3u8
-
-#EXTINF:-1 tvg-id="En familia" group-title="OTRAS",En familia
+#EXTINF:-1 tvg-id="Enfamilia" group-title="OTRAS",En familia
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:102_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="CRIME" group-title="OTRAS",CRIME
@@ -196,7 +193,7 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:114_HD.smil/man
 #EXTINF:-1 tvg-id="DTV" group-title="OTRAS",DTV
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:119_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="FUEL TV" group-title="OTRAS",FUEL TV
+#EXTINF:-1 tvg-id="Fuel TV" group-title="OTRAS",Fuel TV
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:123_HD.smil/manifest.m3u8
 
 
