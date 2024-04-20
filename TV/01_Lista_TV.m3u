@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_ES1.xml.gz, https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv_sincolor.xml.gz tvg-shift=-2 
+#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_ES1.xml.gz, https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv_sincolor.xml.gz tvg-shift=+2 
 
 
 #EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1
