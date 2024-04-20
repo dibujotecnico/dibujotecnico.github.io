@@ -200,7 +200,7 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:123_HD.smil/man
 https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
 
 
-#EXTINF:-1 tvg-id="ES:.Películas.Top.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=-2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7787b527-5f39-4180-98c9-6d093d3215c8-peliculas-top-rakuten-tv-1621956596-width200-quality90.png", Rakuten Pelis Top
+#EXTINF:-1 tvg-id="ES:.Películas.Top.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7787b527-5f39-4180-98c9-6d093d3215c8-peliculas-top-rakuten-tv-1621956596-width200-quality90.png", Rakuten Pelis Top
 https://rakuten-topfree-2-eu.rakuten.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ES:.Películas.Top.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Pelis Top
