@@ -203,82 +203,82 @@ https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
 #EXTINF:-1 tvg-id="ES:.Películas.Top.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7787b527-5f39-4180-98c9-6d093d3215c8-peliculas-top-rakuten-tv-1621956596-width200-quality90.png", Rakuten Pelis Top
 https://rakuten-topfree-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.Top.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Pelis Top
+#EXTINF:-1 tvg-id="ES:.Películas.Top.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7787b527-5f39-4180-98c9-6d093d3215c8-peliculas-top-rakuten-tv-1621956596-width200-quality90.png", Rakuten Pelis Top
 https://e2480f6eed82498b953d8a2eabd43b4f.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-es_TopFree/d0db4b19-46bb-49ef-bad8-de41aa91a0df/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Acción.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Acción
+#EXTINF:-1 tvg-id="ES:.Películas.de.Acción.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/2ebca1ec-0fc9-48a4-b040-8ab526df1f26-peliculas-de-accion-rakuten-tv-1621956288-width200-quality90.png", Rakuten Acción
 https://rakuten-actionmovies-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Acción.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Acción
+#EXTINF:-1 tvg-id="ES:.Películas.de.Acción.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/2ebca1ec-0fc9-48a4-b040-8ab526df1f26-peliculas-de-accion-rakuten-tv-1621956288-width200-quality90.png", Rakuten Acción
 https://rakuten-actionmovies-2-es.lg.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Acción.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Acción
+#EXTINF:-1 tvg-id="ES:.Películas.de.Acción.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/2ebca1ec-0fc9-48a4-b040-8ab526df1f26-peliculas-de-accion-rakuten-tv-1621956288-width200-quality90.png", Rakuten Acción
 https://7316af19af3348fbafec08db40c987fb.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-es_RakutenActionMovies/490b852f-6e0a-411d-be30-774abd3bdad3/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Comedia.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Comedia
+#EXTINF:-1 tvg-id="ES:.Películas.de.Comedia.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/f46d8e24-5150-443b-a370-f938eda185e9-width200-quality90.jpeg", Rakuten Comedia
 https://rakuten-comedymovies-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Comedia.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Comedia
+#EXTINF:-1 tvg-id="ES:.Películas.de.Comedia.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/f46d8e24-5150-443b-a370-f938eda185e9-width200-quality90.jpeg", Rakuten Comedia
 https://rakuten-comedymovies-2-es.lg.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Comedia.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Comedia
+#EXTINF:-1 tvg-id="ES:.Películas.de.Comedia.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/f46d8e24-5150-443b-a370-f938eda185e9-width200-quality90.jpeg", Rakuten Comedia
 https://69e10208b9a0477c91a7d3c5bc302b85.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-es_RakutenComedyMovies/8b44b25f-bdfb-401a-aca4-32b343230d7c/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Spotlight.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Spotlight
+#EXTINF:-1 tvg-id="ES:.Spotlight.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="", Rakuten Spotlight
 https://rakuten-spotlight-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Spotlight.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Spotlight
+#EXTINF:-1 tvg-id="ES:.Spotlight.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="", Rakuten Spotlight
 https://rakuten-spotlight-2-es.lg.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Drama.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Drama
+#EXTINF:-1 tvg-id="ES:.Películas.de.Drama.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/27f15d74-cd48-45ad-834c-3c2d97275e68-peliculas-de-drama-rakuten-tv-1621956345-width308-quality90.jpeg", Rakuten Drama
 https://rakuten-tvshows-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Drama.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Drama
+#EXTINF:-1 tvg-id="ES:.Películas.de.Drama.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/27f15d74-cd48-45ad-834c-3c2d97275e68-peliculas-de-drama-rakuten-tv-1621956345-width308-quality90.jpeg", Rakuten Drama
 https://rakuten-tvshows-2-es.lg.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.de.Drama.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Drama
+#EXTINF:-1 tvg-id="ES:.Películas.de.Drama.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/27f15d74-cd48-45ad-834c-3c2d97275e68-peliculas-de-drama-rakuten-tv-1621956345-width308-quality90.jpeg", Rakuten Drama
 https://43acc28426e84e7b8a691e3503112bd8.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-es_RakutenTVShows/f2b28361-34e9-468c-bc52-b042585b6139/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Cine.Español.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Cine español
+#EXTINF:-1 tvg-id="ES:.Cine.Español.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/fe99ab67-7935-40ad-aedb-010a73e70df8-cine-espanol-rakuten-tv-1628175641-width308-quality90.jpeg", Rakuten Cine español
 https://rakuten-cine-espanol-1-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Cine.Español.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Cine español
+#EXTINF:-1 tvg-id="ES:.Cine.Español.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/fe99ab67-7935-40ad-aedb-010a73e70df8-cine-espanol-rakuten-tv-1628175641-width308-quality90.jpeg", Rakuten Cine español
 https://128559a99ef24f61b53e3f954af3db8c.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-es_Local/e4380f77-c7c7-4014-a4fe-9724cbe2c1d5/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.En.Familia.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten En familia
+#EXTINF:-1 tvg-id="ES:.En.Familia.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/f0740120-7a23-4bdb-a2b3-c03f1d78d3f9-width308-quality90.jpeg", Rakuten En familia
 https://rakuten-family-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.En.Familia.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten En familia
+#EXTINF:-1 tvg-id="ES:.En.Familia.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/f0740120-7a23-4bdb-a2b3-c03f1d78d3f9-width308-quality90.jpeg", Rakuten En familia
 https://6ba55874ea074d818b347bf766d35316.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-es_RakutenFamily/20f72643-5fa2-437e-a1d1-7e82f3c4cdaf/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Thrillers.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Thriller
+#EXTINF:-1 tvg-id="ES:.Thrillers.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/6183803c-66f1-4fe9-98fa-f0ce319c4650-width308-quality90.jpeg", Rakuten Thriller
 https://rakuten-thriller-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Thrillers.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Thriller
+#EXTINF:-1 tvg-id="ES:.Thrillers.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/6183803c-66f1-4fe9-98fa-f0ce319c4650-width308-quality90.jpeg", Rakuten Thriller
 https://c494a836bb214f8bb486580f8b23e433.mediatailor.us-east-1.amazonaws.com/v1/manifest/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-es_RakutenThriller/bee1e75f-296a-4e66-b4ab-f49fc8508551/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.Románticas.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Romántico
+#EXTINF:-1 tvg-id="ES:.Películas.Románticas.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a77cda3-1e27-4d28-a2a4-6f913328e46c-peliculas-romanticas-rakuten-tv-1641196121-width308-quality90.jpeg", Rakuten Romántico
 https://rakuten-romance-2-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Películas.Románticas.-.Rakuten.TV.es" group-title="RAKUTEN TV", Rakuten Romántico
+#EXTINF:-1 tvg-id="ES:.Películas.Románticas.-.Rakuten.TV.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a77cda3-1e27-4d28-a2a4-6f913328e46c-peliculas-romanticas-rakuten-tv-1641196121-width308-quality90.jpeg", Rakuten Romántico
 https://2d8524e2966d4b348b210ec79bdaa943.mediatailor.us-east-1.amazonaws.com/v1/manifest/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-es_RakutenRomance/d7b76db9-25fe-4ddc-8c1d-8d5cf51db22d/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.MyTime.Movie.Network.es" group-title="RAKUTEN TV", Rakuten My Time
+#EXTINF:-1 tvg-id="ES:.MyTime.Movie.Network.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/e9ebb3e1-2419-4299-91f5-20256e320589-width308-quality90.jpeg", Rakuten My Time
 https://appletree-mytimespain-rakuten.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ES:.MyTime.Movie.Network.es" group-title="RAKUTEN TV", Rakuten My Time
+#EXTINF:-1 tvg-id="ES:.MyTime.Movie.Network.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/e9ebb3e1-2419-4299-91f5-20256e320589-width308-quality90.jpeg", Rakuten My Time
 https://rakutenaa-mytime-spain-rakuten-a1uv0.amagi.tv/playlist/rakutenAA-mytime-spain-rakuten/cb5434186573678984c83d61cef344a9f9701fde1d6988693eb5518975d1073184bdfad39112b12d148f57d667656b555677895fd47d03c3c07ab1414329442fc587b07bd8991208b2d91f5c73f12f480eb61114d2214d229bad4e5ed13cb3205317a50f6a5462c0ec58f8234f97895c83622f89a4da6539785f5996080befb1648baeb51e2a9a28e7de4f17cb6b10b9c62d958542ecc5850ccb61b34cc257ddc3fa9ce932d3d2d20cfe06ef0b0a57306f9c8c7887c64fc4abf00668c42671134b03b2f3c3a61964d11719299296cabb76c001da9f2c85125fd166ca18d568df32f071cd8e4fa4be84db475730a7c164753eb0e0d2ef915624b864a1e683b172788ac9047743f679c1322e4ae497b90488c20c93a43384b36c2235c995579491bed993daff4b9836f5d5e08e0241416d100788499d9369a94fb71cfa9b4b7806382ec39b51d7b9dd5b266b4c83bf52d90769dab1ead3855c51a2611f49d770c952011e8a5e282eb32ba19f6b3fd96b0bd56d68b60c6d8244b1b97cadf496b40768b48bc21af93eebb659888d68d86c384a3da3fe2d46405e42d8eb6f0a386db1238eb79bb12f595a919dbdffc44007033c015b0f8eddea7f9f8bcc5b747ca674034e51223eb55eaa03b0014d1311cd1bc5a50a71ba0b2026e3d556373d6a9fdab48788ce903ddf10d2cbee062b3e4f6abe363a3f6bd2a4ff3f975c1a272d0dda7e0e24bc03497def9bdf97ffea0ade8e6bae62107e09c4f4047e045361680f8fe20cbd3ce78047e3f1ba5dc8fcb201519739a20c1990d7e365fc9fc7ad0b09c2ae041830ced16ac62b2cc55a807bdbd43d80e60302513e134d90da57fc5cec8fcd9771e046c04e076dd56da899f18cc27f46e2e32359541f5c047646793e56c2b0a4650468d3bd2ae75aefd456a1435a3d3a4bace76a3dd1b92246e65f0e61a1b3f49ba1cb1a15d851e37ccd740bd431674ab0956abad9f39980866b473fdab9a558beaf9cbecfdacb356d026a3998c04b5c78d65493e666b19ff21d85fbe3342597f605834fd9a1856c810fb0cab500dce1f79cde426792deca9ebb91df01c9b31a40c115b392ede1fdf883c760edd3b00b7da8298830c590cf4c1c7ce7d19225c62fb9ea2c39ee862b2bbdaaf238818d442fed5ec013376bf8c18d6b71a8a96ac71ccbc5a15d0fe40c6ffaab876ac5add8a7c6aee7c9f28c81264d416aa96296c7c959165faf96742c2e371a7f2ffc4f4625e8326bea4ffcb4a2f95071df5aca2336b16cb7824ffff433b8a79fb3bcf36234f5a34246bb4fc00eba28c196dda869f40330fa39d13c6bb4dadaf1d0a396e59b914e287ffc21b700c66382bceafb122b0560d703374b52933bca190c559bdc1587e7616588cbe541a422515609003fdf13dcc84d5024a0b6a9e39e4f3f35ed5352f67b03f2f4/48/1920x1080_6046040/index.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Cine.Friki.es" group-title="RAKUTEN TV", Rakuten Cine Friki
+#EXTINF:-1 tvg-id="ES:.Cine.Friki.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/2c7d3efb-0e8c-49b8-a130-05f95b4c53ba-width308-quality90.jpeg", Rakuten Cine Friki
 https://zylo-cinefriki-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-zylo-cinefriki-rakuten/CDN/master.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Dark.Matter.es" group-title="RAKUTEN TV", Rakuten Dark Matter
+#EXTINF:-1 tvg-id="ES:.Dark.Matter.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/ca844cc1-3979-4e51-af7c-d08357ebc334-width308-quality90.jpeg", Rakuten Dark Matter
 https://d39g1vxj2ef6in.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/603a6cbe-f63b-4154-9d51-cbab11907261/5.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Grjngo.es" group-title="RAKUTEN TV", Rakuten Western
+#EXTINF:-1 tvg-id="ES:.Grjngo.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/adf6b2f1-7802-449a-a5ea-627a68bfb0c7-width308-quality90.jpeg", Rakuten Western
 https://5c579fdda41740e2a15ba13f0ae11562.mediatailor.us-east-1.amazonaws.com/v1/manifest/0fb304b2320b25f067414d481a779b77db81760d/RakutenTV-es_GrjngoPeliculasDelOeste/b0e0096f-aba2-44a4-a600-13ab95e044df/2.m3u8
 
-#EXTINF:-1 tvg-id="ES:.Euronews.DIRECTO.es" group-title="RAKUTEN TV", Rakuten Euronews
+#EXTINF:-1 tvg-id="ES:.Euronews.DIRECTO.es" group-title="RAKUTEN TV" tvg-shift=+2 tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/b4cec5e3-1dec-465b-8a41-7808c1c2ed76-width200-quality90.png", Rakuten Euronews
 https://rakuten-euronews-12-eu.rakuten.wurl.tv/playlist.m3u8
 
 
