@@ -594,9 +594,6 @@ http://tv.teleclub.xyz/envivo/Deportes/ESPN_EXTRA/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/zKwneZ3.png" group-title="Teleclub", TyC Sports
 http://tv.teleclub.xyz/envivo/Deportes/TYC_SPORTS/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IEQHphW.jpg" group-title="Teleclub", WWE &amp; WWF
-http://tv.teleclub.xyz/envivo/Deportes/WWE_WWF/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/yTaEw8U.png" group-title="Teleclub", ESPN 4
 http://tv.teleclub.xyz/envivo/Deportes/ESPN4/index.m3u8
 
