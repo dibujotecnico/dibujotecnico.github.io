@@ -523,4 +523,19 @@ acestream://77fd6e894eba1957177c0f8faa48ff851b3ffbd5
 #EXTINF:-1 tvg-id="MATCH! Prime HD [RU]" group-title="AceStream", MATCH! Prime HD [RU]
 acestream://4b7c5f21b435d79c823e47572655a9c157a3ba12)
 
+#EXTINF:-1 tvg-id="PIMPLE TV[RU]" group-title="AceStream", PIMPLE TV[RU]
+acestream://11b6aa16e978a409504b9e3e9c3b29c56f392bdf
+
+#EXTINF:-1 tvg-id="PIMPLE TV[RU]" group-title="AceStream", PIMPLE TV[RU]
+acestream://955bc653f090c238b8d933b41d8a66fee1bf7893
+
+#EXTINF:-1 tvg-id="PIMPLE TV[RU]" group-title="AceStream", PIMPLE TV[RU]
+acestream://11b6aa16e978a409504b9e3e9c3b29c56f392bdf
+
+#EXTINF:-1 tvg-id="PIMPLE TV[RU]" group-title="AceStream", PIMPLE TV[RU]
+acestream://ceaa2553d401c294166b8e498f5aaa1ef1aee8e4
+
+#EXTINF:-1 tvg-id="PIMPLE TV[RU]" group-title="AceStream", PIMPLE TV[RU]
+acestream://8b8f8dde3e3de6206c4023011525546bf081f09d
+
 
