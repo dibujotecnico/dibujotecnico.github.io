@@ -229,6 +229,26 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:224_HD.smil/man
 #EXTINF:-1 tvg-id="Surf Channel" group-title="OTRAS", SURF CHANNEL
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:227_HD.smil/manifest.m3u8
 
+#EXTINF:-1 tvg-id="TG7" group-title="AUTONÓMICAS", TG7 Granada
+https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:240_HD.smil/manifest.m3u8
+
+#EXTINF:-1 tvg-id="La 7" group-title="AUTONÓMICAS", La 7
+https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:241_HD.smil/manifest.m3u8
+
+#EXTINF:-1 tvg-id="PTV Granada" group-title="AUTONÓMICAS", PTV Granada
+https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:242_HD.smil/manifest.m3u8
+
+#EXTINF:-1 tvg-id="Canal Sur HD" group-title="AUTONÓMICAS", Canar Sur
+https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:263_HD.smil/manifest.m3u8
+
+#EXTINF:-1 tvg-id="El Toro TV" group-title="GENERAL", El toro
+https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:266_HD.smil/manifest.m3u8
+
+#EXTINF:-1 tvg-id="ETB 1" group-title="AUTONÓMICAS", ETB
+https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:273_HD.smil/manifest.m3u8
+
+
+
 
 
 
