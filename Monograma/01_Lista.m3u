@@ -4,19 +4,19 @@
 #EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:1_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1
+#EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1 akamaized
 https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8
 
-#EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1
+#EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1 ztnr
 https://ztnr.rtve.es/ztnr/1688877.m3u8
 
 #EXTINF:-1 tvg-id="La 2" group-title="GENERAL",La 2
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:2_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="La 2" group-title="GENERAL",La 2
+#EXTINF:-1 tvg-id="La 2" group-title="GENERAL",La 2 clnx
 https://rtvelivestream-clnx.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
 
-#EXTINF:-1 tvg-id="La 2" group-title="GENERAL",La 2
+#EXTINF:-1 tvg-id="La 2" group-title="GENERAL",La 2 ztnr
 https://ztnr.rtve.es/ztnr/1688885.m3u8
 
 #EXTINF:-1 tvg-id="La Otra" group-title="AUTONÓMICAS",La Otra
@@ -151,7 +151,7 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:62_HD.smil/mani
 #EXTINF:-1 tvg-id="Warner TV HD" group-title="CINE",Warner TV
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:69_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM
+#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM mpd
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.mpd
 
 #EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM
@@ -220,10 +220,10 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:119_HD.smil/man
 #EXTINF:-1 tvg-id="Fuel TV" group-title="OTRAS",Fuel TV
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:123_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Televigo" group-title="AUTONÓMICAS",TELEVIGO
+#EXTINF:-1 tvg-id="Televigo" group-title="AUTONÓMICAS",TELEVIGO cloud
 https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
 
-#EXTINF:-1 tvg-id="Somos cine" group-title="CINE",Somos cine
+#EXTINF:-1 tvg-id="Somos cine" group-title="CINE",Somos cine akamaized
 https://rtvelivestream.akamaized.net/eventual/gofast/play_cine_main_dvr_1080.m3u8
 
 #EXTINF:-1 tvg-id="acontra+" group-title="CINE", Acontra+
@@ -232,19 +232,19 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:149_HD.smil/man
 #EXTINF:-1 tvg-id="Cine Feel Good" group-title="CINE", Cine FeelGood
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:151_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Cine Feel Good" group-title="CINE", Cine FeelGood
+#EXTINF:-1 tvg-id="Cine Feel Good" group-title="CINE", Cine FeelGood tvfy
 https://daiconnect.com/live/hls/tvup/tvfy-feelgood/165df04c5e30acdcace310ea0d3b56a1/.m3u8
 
 #EXTINF:-1 tvg-id="Cines Verdi TV" group-title="CINE", Cines Verdi
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:152_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="Cines Verdi TV" group-title="CINE",Cines Verdi
+#EXTINF:-1 tvg-id="Cines Verdi TV" group-title="CINE",Cines Verdi tvfy
 https://daiconnect.com/live/hls/tvup/tvfy-verdi/bf9c6501109a65d50a0f164db0a272e4/.m3u8
 
-#EXTINF:-1 tvg-id="Clásicos atresplayer" group-title="CINE",A3 Clásicos
+#EXTINF:-1 tvg-id="Clásicos atresplayer" group-title="CINE",A3 Clásicos fast-channels
 https://fast-channels.atresmedia.com/648ef12c2bfab0e4507e0d61/648ef12c2bfab0e4507e0d61/5.m3u8
 
-#EXTINF:-1 tvg-id="Multicine atresplayer" group-title="CINE",A3 Multicine
+#EXTINF:-1 tvg-id="Multicine atresplayer" group-title="CINE",A3 Multicine fast-channels
 https://fast-channels.atresmedia.com/648ef18c1756b0e41daf83cc/648ef18c1756b0e41daf83cc/1.m3u8
 
 #EXTINF:-1 tvg-id="CYLTV HD" group-title="AUTONÓMICAS", CyL TV
