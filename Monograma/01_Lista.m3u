@@ -37,6 +37,12 @@ http://190.61.43.117:45000/play/a01v
 #EXTINF:-1 tvg-id="ESPN 5" group-title="DEPORTES",ESPN 5
 http://190.61.43.117:45000/play/a06w
 
+#EXTINF:-1 tvg-id="ESPN 6" group-title="DEPORTES",ESPN 6
+http://190.61.43.116:45000/play/a060
+
+#EXTINF:-1 tvg-id="ESPN 7" group-title="DEPORTES",ESPN 7
+http://190.61.43.116:45000/play/a01g
+
 #EXTINF:-1 tvg-id="Teledeporte" group-title="DEPORTES",TPD
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:4_HD.smil/manifest.m3u8
 
