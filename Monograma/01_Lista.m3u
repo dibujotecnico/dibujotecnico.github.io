@@ -152,7 +152,7 @@ https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:62_HD.smil/mani
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:69_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM mpd
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/
+https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.mpd
 
 #EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM
 https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.m3u8
