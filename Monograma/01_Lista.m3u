@@ -2,7 +2,7 @@
 
 
 #EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:1_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:1_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="La 1 HD" group-title="GENERAL",La 1*
 https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8
@@ -47,178 +47,184 @@ http://190.61.43.116:45000/play/a01g
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:4_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="GOL PLAY" group-title="DEPORTES",Gol Play
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:5_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:5_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Clan" group-title="INFANTIL",Clan
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:6_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:6_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Antena 3 HD" group-title="GENERAL",Antena 3
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:7_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:7_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Cuatro HD" group-title="GENERAL",Cuatro
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:9_HD.smil/index.m3u8
 
 #EXTINF:-1 tvg-id="Atreseries" group-title="CINE",Atreseries
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:10_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:10_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="La Sexta HD" group-title="GENERAL",La Sexta
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:11_HD.smil/index.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:11_HD.smil/index.m3u8
 
 #EXTINF:-1 tvg-id="Neox" group-title="GENERAL",Neox
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:13_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:13_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Factoría de Ficción" group-title="GENERAL",FDF
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:16_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:16_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Boing" group-title="INFANTIL",Boing
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:17_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:17_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Divinity" group-title="GENERAL",Divinity
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:18_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:18_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Energy" group-title="GENERAL",Energy
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:19_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:19_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Be Mad" group-title="CINE",Be Mad
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:20_HD.smil/index.m3u8
 
 #EXTINF:-1 tvg-id="Disney Channel HD" group-title="INFANTIL",Disney Channel
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:21_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:21_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Paramount Network" group-title="CINE",Paramount Network
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:22_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:22_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="DMAX" group-title="GENERAL",DMAX
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:23_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:23_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="TRECE" group-title="GENERAL",TRECE
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:24_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:24_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="DKISS" group-title="GENERAL",DKISS
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:25_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:25_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Ten" group-title="GENERAL",TEN
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:26_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:26_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Real Madrid TV" group-title="DEPORTES",Real Madrid TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:27_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:27_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Canal Sur HD" group-title="AUTONÓMICAS",Canal Sur
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:29_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:29_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Castilla la Mancha TV" group-title="AUTONÓMICAS",cmm
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:31_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:31_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Telemadrid" group-title="AUTONÓMICAS",Telemadrid
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:32_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:32_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Canal Extremadura" group-title="AUTONÓMICAS",Canal Extremadura
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:34_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:34_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="La 7" group-title="AUTONÓMICAS",La 7
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:35_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:35_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Iberalia pesca" group-title="OTRAS",Iberalia Pesca
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:36_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:36_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Iberalia caza" group-title="OTRAS",Iberalia Caza
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:37_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:37_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Iberalia TV" group-title="OTRAS",Iberalia
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:38_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:38_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Cazavisión" group-title="OTRAS",Cazavisión
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:39_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:39_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="DEPORTES",EuroSport 1
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:43_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:43_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="TVG - TV Galicia" group-title="AUTONÓMICAS",TV Galicia
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:47_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:47_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Sevilla FC Televisión" group-title="DEPORTES",Sevilla FC TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:52_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:52_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Discovery" group-title="OTRAS",Discovery
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:54_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:54_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Eurosport 2" group-title="DEPORTES",EuroSport 2
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:59_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:59_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Betis TV" group-title="DEPORTES",Betis
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:62_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:62_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Warner TV HD" group-title="CINE",Warner TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:69_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:69_HD.smil/manifest.m3u8
 
-#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM mpd
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.mpd
+#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM2 mpd
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.mpd
 
-#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.m3u8
+#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM2 m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.m3u8
+
+#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM3 mpd
+https://spa-ha-p003.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.mpd
+
+#EXTINF:-1 tvg-id="TCM HD" group-title="CINE",TCM5 m3u8
+https://spa-ha-p005.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:70_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Cosmo HD" group-title="CINE",COSMO
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:75_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:75_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="8 Mediterraneo" group-title="AUTONÓMICAS",8 Mediterráneo
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:80_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:80_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="SyFy HD" group-title="CINE",SyFy
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:81_HD.smil/index.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:81_HD.smil/index.m3u8
 
 #EXTINF:-1 tvg-id="Canal Hollywood HD" group-title="CINE",Canal Hollywood
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:82_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:82_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Odisea" group-title="OTRAS",ODISEA
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:83_HD.smil/index.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:83_HD.smil/index.m3u8
 
 #EXTINF:-1 tvg-id="Decasa" group-title="OTRAS",decasa
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:84_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:84_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Canal Cocina" group-title="OTRAS",Cocina
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:85_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:85_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="XTRM" group-title="CINE",XTRM
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:86_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:86_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="AMC HD" group-title="CINE",AMC
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:87_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:87_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Sundance TV" group-title="CINE",Sundance TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:88_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:88_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="AMC Break" group-title="OTRAS",BREAK
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:89_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:89_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Historia" group-title="OTRAS",HISTORIA
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:90_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:90_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="DARK" group-title="CINE",DARK
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:92_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:92_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Calle 13 HD" group-title="CINE",Calle 13 Universal
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:96_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:96_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="BOM Cine" group-title="CINE",BOM
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:243_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:243_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Enfamilia" group-title="OTRAS",En familia
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:102_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:102_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="CRIME" group-title="OTRAS",CRIME
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:103_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:103_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="SOMOS" group-title="CINE",SOMOS
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:104_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:104_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Aragón TV" group-title="AUTONÓMICAS",Aragón TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:114_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:114_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="DTV" group-title="OTRAS",DTV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:119_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:119_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Fuel TV" group-title="OTRAS",Fuel TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:123_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:123_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Televigo" group-title="AUTONÓMICAS",TELEVIGO*
 https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
@@ -227,16 +233,16 @@ https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
 https://rtvelivestream.akamaized.net/eventual/gofast/play_cine_main_dvr_1080.m3u8
 
 #EXTINF:-1 tvg-id="acontra+" group-title="CINE", Acontra+
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:149_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:149_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Cine Feel Good" group-title="CINE", Cine FeelGood
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:151_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:151_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Cine Feel Good" group-title="CINE", Cine FeelGood*
 https://daiconnect.com/live/hls/tvup/tvfy-feelgood/165df04c5e30acdcace310ea0d3b56a1/.m3u8
 
 #EXTINF:-1 tvg-id="Cines Verdi TV" group-title="CINE", Cines Verdi
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:152_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:152_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Cines Verdi TV" group-title="CINE",Cines Verdi*
 https://daiconnect.com/live/hls/tvup/tvfy-verdi/bf9c6501109a65d50a0f164db0a272e4/.m3u8
@@ -248,28 +254,28 @@ https://fast-channels.atresmedia.com/648ef12c2bfab0e4507e0d61/648ef12c2bfab0e450
 https://fast-channels.atresmedia.com/648ef18c1756b0e41daf83cc/648ef18c1756b0e41daf83cc/1.m3u8
 
 #EXTINF:-1 tvg-id="CYLTV HD" group-title="AUTONÓMICAS", CyL TV
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:224_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:224_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Surf Channel" group-title="OTRAS", SURF CHANNEL
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:227_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge4/smil:227_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="TG7" group-title="AUTONÓMICAS", TG7 Granada
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:240_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:240_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="La 7" group-title="AUTONÓMICAS", La 7
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:241_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:241_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="PTV Granada" group-title="AUTONÓMICAS", PTV Granada
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:242_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:242_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="Canal Sur HD" group-title="AUTONÓMICAS", Canar Sur
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:263_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge3/smil:263_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="El Toro TV" group-title="GENERAL", El toro
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:266_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:266_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="ETB 1" group-title="AUTONÓMICAS", ETB
-https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:273_HD.smil/manifest.m3u8
+https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:273_HD.smil/manifest.m3u8
 
 
 
