@@ -23,25 +23,25 @@ https://ztnr.rtve.es/ztnr/1688885.m3u8
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:3_HD.smil/manifest.m3u8
 
 #EXTINF:-1 tvg-id="ESPN" group-title="DEPORTES",ESPN HD
-http://190.61.43.117:45000/play/a01l
+http://190.60.33.245:4002/play/a0n6/index.m3u8
 
 #EXTINF:-1 tvg-id="ESPN 2" group-title="DEPORTES",ESPN 2
-http://190.61.43.117:45000/play/a053
+http://190.60.33.245:4002/play/a0sz/index.m3u8
 
 #EXTINF:-1 tvg-id="ESPN 3" group-title="DEPORTES",ESPN 3
-http://190.61.43.117:45000/play/a051
+http://190.60.33.245:4002/play/a0sa/index.m3u8
 
-#EXTINF:-1 tvg-id="ESPN Deportes" group-title="DEPORTES",ESPN 4
-http://190.61.43.117:45000/play/a01v
+#EXTINF:-1 tvg-id="ESPN 4" group-title="DEPORTES",ESPN 4
+http://190.60.33.245:4002/play/a0dg/index.m3u8
 
-#EXTINF:-1 tvg-id="ESPN Internacional" group-title="DEPORTES",ESPN 5
-http://190.61.43.117:45000/play/a06w
+#EXTINF:-1 tvg-id="ESPN 5" group-title="DEPORTES",ESPN 5
+http://190.60.33.245:4002/play/a0m3/index.m3u8
 
 #EXTINF:-1 tvg-id="ESPN 6" group-title="DEPORTES",ESPN 6
-http://190.61.43.116:45000/play/a060
+http://190.60.33.245:4002/play/a0sb/index.m3u8
 
 #EXTINF:-1 tvg-id="ESPN 7" group-title="DEPORTES",ESPN 7
-http://190.61.43.116:45000/play/a01g
+http://190.60.33.245:4002/play/a0dh/index.m3u8
 
 #EXTINF:-1 tvg-id="Teledeporte" group-title="DEPORTES",TPD
 https://spa-ha-p002.cdn.masmediatv.es/SVoriginOperatorEdge/smil:4_HD.smil/manifest.m3u8
