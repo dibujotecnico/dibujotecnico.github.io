@@ -32,7 +32,7 @@ http://190.60.33.245:4002/play/a0sz/index.m3u8
 http://190.60.33.245:4002/play/a0sa/index.m3u8
 
 #EXTINF:-1 tvg-id="ESPN 4" group-title="DEPORTES",ESPN 4
-http://190.60.33.245:4002/play/a0dg/index.m3u8
+http://181.188.216.148:8001/play/a052
 
 #EXTINF:-1 tvg-id="ESPN 5" group-title="DEPORTES",ESPN 5
 http://190.60.33.245:4002/play/a0m3/index.m3u8
